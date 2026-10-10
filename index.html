@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Avishi Srivastava — Full-Stack Software Engineer & AI Systems Developer. Explore achievements, projects built, photo resume, and contact for hiring opportunities.">
+  <meta name="keywords" content="Avishi Srivastava, Portfolio, Software Engineer, Full Stack Developer, React, Node.js, AI, Machine Learning, Resume">
+  <meta name="author" content="Avishi Srivastava">
+  <title>Avishi Srivastava | Full-Stack Engineer &amp; Portfolio</title>
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+  <!-- Ambient Interactive Background Elements -->
+  <div class="ambient-bg"></div>
+  <div class="ambient-grid"></div>
+
+  <!-- ==========================================================================
+       SITE HEADER / NAVBAR
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-wrapper">
+        <a href="#intro" class="brand-logo" aria-label="Home">
+          <div class="brand-icon">AS</div>
+          <span class="brand-text">Avishi<span>.dev</span></span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#intro" class="active">Intro</a></li>
+          <li><a href="#launchpad">Launchpad</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#projects">Projects Built</a></li>
+          <li><a href="#resume">Photo Resume</a></li>
+          <li><a href="#contact">Contact &amp; Hire</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle dark/light theme" title="Toggle Theme">
+            <!-- Icon populated by app.js -->
+          </button>
+          <a href="#contact" class="btn-hire-nav">
+            <span>Hire Me</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+            ☰
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO / INTRO START SCREEN
+         ========================================================================== -->
+    <section class="hero-section" id="intro">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-text-content">
+            <div class="badge-status">
+              <span class="status-dot"></span>
+              <span id="heroStatusText">Available for Full-Time Roles &amp; Consulting</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text" id="heroName">Avishi Srivastava</span>
+            </h1>
+
+            <h2 class="hero-subtitle" id="heroRole">
+              Full-Stack Software Engineer &amp; Creative Technologist
+            </h2>
+
+            <p class="hero-description" id="heroDesc">
+              Architecting high-performance web systems, distributed cloud applications, and AI-driven digital experiences with an uncompromising standard of craft.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn-primary">
+                <span>Explore Projects Built</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+              <a href="#resume" class="btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                <span>View Photo Resume</span>
+              </a>
+              <a href="#contact" class="btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <span>Contact for Hiring</span>
+              </a>
+            </div>
+
+            <div class="social-pills">
+              <a href="https://github.com/avishi-srivastava" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://linkedin.com/in/avishi-srivastava" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn Profile">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="mailto:avishi.srivastava.dev@gmail.com" class="social-icon-btn" title="Send Direct Email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Right Profile Card -->
+          <div class="hero-visual">
+            <div class="avatar-card">
+              <div class="avatar-img-wrapper">
+                <img id="heroAvatarImg" src="assets/images/avatar.svg" alt="Avishi Srivastava Portrait" />
+                <div class="avatar-overlay-badge">
+                  <span class="status-dot"></span> Verified Engineer
+                </div>
+              </div>
+              <div class="avatar-meta">
+                <div>
+                  <div class="meta-title">Avishi Srivastava</div>
+                  <div class="meta-sub">Bengaluru • Open to Relocation</div>
+                </div>
+                <a href="#resume" class="btn-open-resume-quick">
+                  Photo Resume →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         START PAGE INTERACTIVE HUBS (LAUNCHPAD TILES)
+         ========================================================================== -->
+    <section class="start-hub-section" id="launchpad">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            Interactive Portal
+          </div>
+          <h2 class="section-title">Where would you like to explore?</h2>
+          <p class="section-desc">
+            Direct access to honors, shipped production software, comprehensive credentials, and hiring channels.
+          </p>
+        </div>
+
+        <div class="launchpad-grid">
+          <!-- Hub 1: Achievements -->
+          <a href="#achievements" class="hub-card achievements-hub">
+            <div class="hub-top">
+              <div class="hub-icon-wrapper">🏆</div>
+              <span class="hub-tag">8+ Honors</span>
+            </div>
+            <div>
+              <h3 class="hub-title">Achievements</h3>
+              <p class="hub-description">
+                Global hackathon victories, cloud solutions certifications, and technical distinctions.
+              </p>
+            </div>
+            <div class="hub-arrow">
+              <span>View Milestones</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
+          </a>
+
+          <!-- Hub 2: Projects Built -->
+          <a href="#projects" class="hub-card projects-hub">
+            <div class="hub-top">
+              <div class="hub-icon-wrapper">💻</div>
+              <span class="hub-tag">24+ Built</span>
+            </div>
+            <div>
+              <h3 class="hub-title">Projects Built</h3>
+              <p class="hub-description">
+                Multi-modal AI search, distributed telemetry, headless e-commerce, and real-time P2P systems.
+              </p>
+            </div>
+            <div class="hub-arrow">
+              <span>Browse Projects</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
+          </a>
+
+          <!-- Hub 3: Photo Resume -->
+          <a href="#resume" class="hub-card resume-hub">
+            <div class="hub-top">
+              <div class="hub-icon-wrapper">📄</div>
+              <span class="hub-tag">Visual CV</span>
+            </div>
+            <div>
+              <h3 class="hub-title">Photo Resume</h3>
+              <p class="hub-description">
+                Interactive dossier with high-res portrait, career history timeline, skills grid, and 1-click PDF print.
+              </p>
+            </div>
+            <div class="hub-arrow">
+              <span>Inspect Resume</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
+          </a>
+
+          <!-- Hub 4: Contact for Hiring -->
+          <a href="#contact" class="hub-card contact-hub">
+            <div class="hub-top">
+              <div class="hub-icon-wrapper">💼</div>
+              <span class="hub-tag">Recruiter Hub</span>
+            </div>
+            <div>
+              <h3 class="hub-title">Contact for Hiring</h3>
+              <p class="hub-description">
+                Tailored inquiry portal for engineering leaders &amp; recruiters with immediate response SLA.
+              </p>
+            </div>
+            <div class="hub-arrow">
+              <span>Connect / Hire</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ACHIEVEMENTS SECTION
+         ========================================================================== -->
+    <section class="achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+            Recognitions &amp; Impact
+          </div>
+          <h2 class="section-title">Key Achievements &amp; Honors</h2>
+          <p class="section-desc">
+            Proven track record of engineering leadership, international hackathons, and verified technical credentials.
+          </p>
+        </div>
+
+        <!-- Metrics Strip -->
+        <div class="metrics-strip" id="metricsStrip">
+          <!-- Populated by app.js -->
+        </div>
+
+        <!-- Achievements Cards Grid -->
+        <div class="achievements-grid" id="achievementsGrid">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROJECTS BUILT SECTION
+         ========================================================================== -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Production Code
+          </div>
+          <h2 class="section-title">Projects Built &amp; Shipped</h2>
+          <p class="section-desc">
+            Selected software architectures spanning multi-modal AI systems, distributed cloud platforms, and immersive web experiences.
+          </p>
+        </div>
+
+        <!-- Filter Pills & Search -->
+        <div class="projects-filter-bar">
+          <div class="filter-pills">
+            <button class="filter-btn active" data-category="all">All Projects</button>
+            <button class="filter-btn" data-category="ai">AI &amp; ML</button>
+            <button class="filter-btn" data-category="fullstack">Full-Stack</button>
+            <button class="filter-btn" data-category="frontend">Frontend &amp; UI</button>
+            <button class="filter-btn" data-category="devops">Cloud &amp; DevOps</button>
+          </div>
+
+          <div class="search-box-wrapper">
+            <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="projectSearchInput" class="search-input" placeholder="Search by name or tech stack (e.g. React, Go)..." aria-label="Search projects" />
+          </div>
+        </div>
+
+        <!-- Projects Cards Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PHOTO RESUME SECTION
+         ========================================================================== -->
+    <section class="resume-section" id="resume">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Visual Dossier
+          </div>
+          <h2 class="section-title">Photo Resume &amp; Career History</h2>
+          <p class="section-desc">
+            Complete executive profile with portrait, work experience, technical proficiencies, and print-ready PDF export.
+          </p>
+        </div>
+
+        <!-- Action Bar -->
+        <div class="resume-action-bar">
+          <div class="resume-action-left">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Verified Candidate Dossier • Avishi Srivastava</span>
+          </div>
+          <div class="resume-action-right">
+            <button class="btn-copy-link" id="btnCopyResumeLink" title="Copy section link to share">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+              <span>Copy Link</span>
+            </button>
+            <button class="btn-print" id="btnPrintResume" title="Print clean ATS-friendly PDF resume">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+              <span>Print / Save as PDF</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Resume Dossier -->
+        <div class="resume-dossier" id="resumeDossier">
+          <!-- Header Row -->
+          <div class="resume-header-row">
+            <div class="resume-portrait">
+              <img id="resumePhoto" src="assets/images/avatar.svg" alt="Avishi Srivastava Photo Resume" />
+            </div>
+            <div class="resume-header-meta">
+              <h2 id="resumeTitle">Avishi Srivastava — Full-Stack Software Engineer</h2>
+              <div class="resume-header-role">Specializing in Scalable Distributed Systems, React &amp; Applied AI</div>
+              <p class="resume-header-contact" id="resumeContactLine">
+                avishi.srivastava.dev@gmail.com • +91 98765 43210 • Bengaluru, India • linkedin.com/in/avishi-srivastava
+              </p>
+            </div>
+          </div>
+
+          <!-- Body Grid -->
+          <div class="resume-body-grid">
+            <!-- Left Column: Summary & Experience -->
+            <div>
+              <div style="margin-bottom: 32px;">
+                <h3 class="resume-col-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  Professional Summary
+                </h3>
+                <p id="resumeProfileSummary" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7;">
+                  <!-- Populated by app.js -->
+                </p>
+              </div>
+
+              <div>
+                <h3 class="resume-col-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                  Work Experience &amp; Engineering Roles
+                </h3>
+                <div class="timeline-list" id="timelineExperience">
+                  <!-- Populated by app.js -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Education, Skills & Certs -->
+            <div>
+              <div style="margin-bottom: 32px;">
+                <h3 class="resume-col-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                  Education
+                </h3>
+                <div id="resumeEducation">
+                  <!-- Populated by app.js -->
+                </div>
+              </div>
+
+              <div style="margin-bottom: 32px;">
+                <h3 class="resume-col-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                  Technical Proficiencies
+                </h3>
+                <div class="skills-block-group" id="resumeSkillsGroup">
+                  <!-- Populated by app.js -->
+                </div>
+              </div>
+
+              <div>
+                <h3 class="resume-col-title">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                  Certifications &amp; Credentials
+                </h3>
+                <ul class="cert-list-sidebar" id="resumeCertList">
+                  <!-- Populated by app.js -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT FOR HIRING SECTION
+         ========================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Hiring Portal
+          </div>
+          <h2 class="section-title">Contact for Hiring Opportunities</h2>
+          <p class="section-desc">
+            Directly connect with Avishi Srivastava for engineering roles, technical advisory, or freelance builds.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Channels & Status -->
+          <div class="contact-info-card">
+            <div>
+              <div class="hiring-status-box" id="hiringStatusSummary">
+                <!-- Populated by app.js -->
+              </div>
+
+              <div class="contact-channels">
+                <!-- Email -->
+                <div class="contact-channel-item">
+                  <div class="channel-left">
+                    <div class="channel-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </div>
+                    <div>
+                      <div class="channel-name">Email Address</div>
+                      <div class="channel-value" id="channelEmailVal">avishi.srivastava.dev@gmail.com</div>
+                    </div>
+                  </div>
+                  <button class="btn-copy-val" onclick="copyChannelText('email')" title="Copy email address">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                  </button>
+                </div>
+
+                <!-- Phone -->
+                <div class="contact-channel-item">
+                  <div class="channel-left">
+                    <div class="channel-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <div>
+                      <div class="channel-name">Direct Phone</div>
+                      <div class="channel-value" id="channelPhoneVal">+91 98765 43210</div>
+                    </div>
+                  </div>
+                  <button class="btn-copy-val" onclick="copyChannelText('phone')" title="Copy phone number">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                  </button>
+                </div>
+
+                <!-- Location -->
+                <div class="contact-channel-item">
+                  <div class="channel-left">
+                    <div class="channel-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div>
+                      <div class="channel-name">Base Location</div>
+                      <div class="channel-value" id="channelLocationVal">Bengaluru, India</div>
+                    </div>
+                  </div>
+                  <button class="btn-copy-val" onclick="copyChannelText('location')" title="Copy location">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Meeting Note -->
+            <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 16px; font-size: 0.85rem; color: var(--text-muted);">
+              💡 <strong>Prefer a quick discovery video call?</strong> Include your calendar link or convenient IST/UTC time slots in the message field.
+            </div>
+          </div>
+
+          <!-- Right: Interactive Hiring Form -->
+          <div class="hiring-form-card">
+            <h3 class="form-title">Send a Hiring Inquiry</h3>
+            <p class="form-subtitle">Fill in the role details below to connect directly with Avishi.</p>
+
+            <form class="hiring-form" id="hireForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="hireName">Your Full Name *</label>
+                  <input type="text" id="hireName" class="form-input" placeholder="e.g. Sarah Jenkins" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="hireEmail">Work Email Address *</label>
+                  <input type="email" id="hireEmail" class="form-input" placeholder="sarah@company.com" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="hireCompany">Company / Organization</label>
+                  <input type="text" id="hireCompany" class="form-input" placeholder="e.g. Stripe, OpenAI, Tech Startup" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="hireRoleType">Opportunity Type *</label>
+                  <select id="hireRoleType" class="form-select" required>
+                    <option value="Full-Time Software Engineer">Full-Time Software Engineer</option>
+                    <option value="Senior Frontend / React Architect">Senior Frontend / React Architect</option>
+                    <option value="Backend &amp; Distributed Systems">Backend &amp; Distributed Systems</option>
+                    <option value="AI / ML Application Development">AI / ML Application Development</option>
+                    <option value="Contract / Architecture Advisory">Contract / Architecture Advisory</option>
+                    <option value="Freelance MVP Build">Freelance MVP Build</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="hireMessage">Role Details, Tech Stack &amp; Expected Timeline *</label>
+                <textarea id="hireMessage" class="form-textarea" placeholder="Tell me about the role, team mission, compensation structure, or project requirements..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit-hire">
+                <span>Submit Hiring Inquiry</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-meta">
+          © 2026 <strong>Avishi Srivastava</strong>. Crafted with clean modern web standards. Built for speed and impact.
+        </div>
+        <ul class="footer-nav">
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Photo Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL BACKDROP CONTAINER
+       ========================================================================== -->
+  <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">✕</button>
+      <div id="modalContent">
+        <!-- Injected dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

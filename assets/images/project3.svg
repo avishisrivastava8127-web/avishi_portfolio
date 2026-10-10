@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#27272a"/>
+    </linearGradient>
+    <linearGradient id="p3Accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="16" fill="url(#p3Grad)"/>
+  <rect width="600" height="42" rx="16" fill="#27272a"/>
+  <rect y="20" width="600" height="22" fill="#27272a"/>
+  <circle cx="25" cy="21" r="6" fill="#ef4444"/>
+  <circle cx="45" cy="21" r="6" fill="#f59e0b"/>
+  <circle cx="65" cy="21" r="6" fill="#10b981"/>
+  <rect x="150" y="11" width="300" height="20" rx="10" fill="#18181b"/>
+  <text x="300" y="25" fill="#a1a1aa" font-family="monospace" font-size="11" text-anchor="middle">https://aura-commerce.store/products</text>
+
+  <g transform="translate(40, 65)">
+    <!-- Header banner -->
+    <rect width="520" height="70" rx="10" fill="url(#p3Accent)" opacity="0.9"/>
+    <text x="25" y="35" fill="#ffffff" font-family="system-ui" font-size="18" font-weight="800">SUMMER TECH COLLECTION 2026</text>
+    <text x="25" y="55" fill="#fff7ed" font-family="system-ui" font-size="12">Next-Gen Audio &amp; Wearables • Instant Stripe Checkout</text>
+
+    <!-- Product Card 1 -->
+    <rect x="0" y="85" width="160" height="180" rx="10" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+    <rect x="15" y="98" width="130" height="80" rx="6" fill="#3f3f46"/>
+    <circle cx="80" cy="138" r="22" fill="#fb923c"/>
+    <text x="15" y="198" fill="#f4f4f5" font-family="system-ui" font-size="13" font-weight="600">Aura Pro ANC</text>
+    <text x="15" y="218" fill="#fb923c" font-family="system-ui" font-size="14" font-weight="bold">$249.00</text>
+    <rect x="15" y="230" width="130" height="24" rx="6" fill="#f97316"/>
+    <text x="80" y="246" fill="#ffffff" font-family="system-ui" font-size="11" font-weight="bold" text-anchor="middle">Add to Cart</text>
+
+    <!-- Product Card 2 -->
+    <rect x="180" y="85" width="160" height="180" rx="10" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+    <rect x="195" y="98" width="130" height="80" rx="6" fill="#3f3f46"/>
+    <circle cx="260" cy="138" r="22" fill="#38bdf8"/>
+    <text x="195" y="198" fill="#f4f4f5" font-family="system-ui" font-size="13" font-weight="600">Cyber Watch Ultra</text>
+    <text x="195" y="218" fill="#fb923c" font-family="system-ui" font-size="14" font-weight="bold">$399.00</text>
+    <rect x="195" y="230" width="130" height="24" rx="6" fill="#f97316"/>
+    <text x="260" y="246" fill="#ffffff" font-family="system-ui" font-size="11" font-weight="bold" text-anchor="middle">Add to Cart</text>
+
+    <!-- Product Card 3 -->
+    <rect x="360" y="85" width="160" height="180" rx="10" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+    <rect x="375" y="98" width="130" height="80" rx="6" fill="#3f3f46"/>
+    <circle cx="440" cy="138" r="22" fill="#c084fc"/>
+    <text x="375" y="198" fill="#f4f4f5" font-family="system-ui" font-size="13" font-weight="600">VR Spatial Glass</text>
+    <text x="375" y="218" fill="#fb923c" font-family="system-ui" font-size="14" font-weight="bold">$599.00</text>
+    <rect x="375" y="230" width="130" height="24" rx="6" fill="#f97316"/>
+    <text x="440" y="246" fill="#ffffff" font-family="system-ui" font-size="11" font-weight="bold" text-anchor="middle">Add to Cart</text>
+  </g>
+</svg>
