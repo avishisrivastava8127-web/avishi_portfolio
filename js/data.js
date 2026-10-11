@@ -42,15 +42,15 @@ const portfolioData = {
     },
     {
       id: "ach-2",
-      title: "Class XII CBSE Board Distinction — 100/100 in Computer Science",
+      title: "Class XII ISC Board Distinction — 100/100 in Computer Science",
       category: "Academic",
-      organization: "Central Board of Secondary Education (CBSE)",
+      organization: "Council for the Indian School Certificate Examinations (ISC)",
       date: "2024 – 2025",
       icon: "🎖️",
-      description: "Achieved a perfect score of 100/100 in Computer Science with a 97.5% overall grade, showing consistent academic excellence and strong conceptual foundation in computing.",
+      description: "Achieved a perfect score of 100/100 in Computer Science with a 97.5% overall grade in ISC Class XII board examinations, showing consistent academic excellence and strong conceptual foundation in computing.",
       metrics: "Computer Science: 100/100 • Overall: 97.5%",
       credentialUrl: "#",
-      credentialId: "CBSE-XII-97.5-CS100"
+      credentialId: "ISC-XII-97.5-CS100"
     },
     {
       id: "ach-3",
@@ -123,7 +123,7 @@ const portfolioData = {
         highlights: "Focus on AI & Machine Learning, Data Structures, and Computational Foundations"
       },
       {
-        institution: "Class XII (CBSE)",
+        institution: "Class XII (ISC)",
         degree: "Higher Secondary Certificate",
         period: "2024 – 2025",
         score: "97.5% overall • Computer Science: 100/100",
