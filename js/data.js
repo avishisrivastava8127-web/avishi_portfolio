@@ -30,7 +30,7 @@ const portfolioData = {
   achievements: [
     {
       id: "ach-1",
-      title: "Second Runner-Up — HackGrid Hackathon (53 Teams)",
+      title: "Second Runner-Up — HackGrid Hackathon",
       category: "Hackathon",
       organization: "HackGrid Hackathon Community",
       date: "2026",
@@ -86,12 +86,12 @@ const portfolioData = {
       category: "agritech",
       categoryLabel: "Web3 & Agri-Tech (HackGrid Project)",
       image: "assets/images/project-biochain.svg",
-      summary: "Second Runner-Up at HackGrid Hackathon (53 Teams). Decentralized agricultural trading desk and mandi arbitrage platform providing cross-corridor wholesale price discovery, AI harvest proof, and automated forward smart contracts.",
+      summary: "Second Runner-Up at HackGrid Hackathon. Decentralized agricultural trading desk and mandi arbitrage platform providing cross-corridor wholesale price discovery, AI harvest proof, and automated forward smart contracts.",
       tags: ["React 19", "Vite", "Tailwind CSS", "Web3 Smart Contracts", "Google Maps API", "APMC Feeds", "Vercel"],
       liveUrl: "https://fantasticfive-hg-26.vercel.app/",
       githubUrl: "https://github.com/avishisrivastava8127-web",
       featured: true,
-      metrics: "2nd Runner-Up at HackGrid Hackathon (53 Teams)",
+      metrics: "2nd Runner-Up at HackGrid Hackathon",
       details: {
         problem: "Agricultural producers and bulk commodity buyers endure fragmented wholesale pricing, high intermediary commissions, and unreliable manual quality inspections across regional APMC mandis.",
         solution: "Engineered KhetiNex BioChain (team Fantastic Five) during the HackGrid Hackathon: a unified agri-tech platform integrating real-time APMC price telemetry, Google Maps logistics arbitrage routing, escrow-backed forward smart contracts, and AI harvest quality verification.",
@@ -140,7 +140,7 @@ const portfolioData = {
 
     achievements: [
       {
-        title: "Second Runner-Up — HackGrid Hackathon (53 Teams)",
+        title: "Second Runner-Up — HackGrid Hackathon",
         points: [
           "Secured second runner-up position in a competitive hackathon.",
           "Collaborated with teammates to develop and present a technical solution.",
