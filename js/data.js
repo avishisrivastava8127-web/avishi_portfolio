@@ -6,10 +6,10 @@
 const portfolioData = {
   personal: {
     name: "Avishi Srivastava",
-    role: "B.Tech in Computer Science and Engineering (AI & ML)",
+    role: "B.Tech in Computer Science and Engineering (AI & ML) • VIT Vellore",
     institution: "Vellore Institute of Technology, Vellore",
-    statusBadge: "Available for Internships & Collaborative Projects",
-    tagline: "LEARN / BUILD / GROW • Passionate about AI, Machine Learning, and Problem-Solving.",
+    statusBadge: "Open to Software Engineering & AI Internships",
+    tagline: "Building strong foundations in Java, Python, DSA, and Artificial Intelligence.",
     avatar: "assets/images/avatar.svg",
     resumeImage: "assets/images/resume.jpg",
     location: "VIT Vellore, Tamil Nadu, India",
@@ -17,10 +17,10 @@ const portfolioData = {
     phone: "8318676578",
     github: "https://github.com/avishisrivastava8127-web",
     projectUrl: "https://fantasticfive-hg-26.vercel.app/",
-    summary: "First-year B.Tech CSE student at VIT Vellore, specialising in Artificial Intelligence and Machine Learning. Passionate about technology, problem-solving and creating meaningful solutions. Recognised as a second runner-up at the HackGrid Hackathon, with strong interests in public speaking, team management and collaboration. Currently building my programming skills in Java and Python while exploring opportunities to contribute to innovative projects and grow in the tech community.",
+    summary: "First-year B.Tech CSE student at VIT Vellore, specialising in Artificial Intelligence and Machine Learning. Passionate about software development, algorithmic problem-solving, and technology. Actively building strong skills in Java, Python, and Data Structures & Algorithms (DSA) while maintaining solid conceptual fundamentals. Eager to contribute to innovative engineering teams with strengths in public speaking, critical thinking, team management, and collaborative execution.",
     stats: [
-      { label: "HackGrid Hackathon", value: "2nd Runner-Up" },
-      { label: "Competing Teams", value: "53 Teams" },
+      { label: "Core Languages", value: "Java & Python" },
+      { label: "Focus Areas", value: "DSA & AI/ML" },
       { label: "Class XII CS", value: "100 / 100" },
       { label: "Class XII Overall", value: "97.5%" }
     ]
