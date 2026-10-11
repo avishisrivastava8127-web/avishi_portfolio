@@ -329,10 +329,11 @@ function initContactChannelsAndForm() {
   // Form submission
   const hireForm = document.getElementById("hireForm");
   if (hireForm) {
-    hireForm.addEventListener("submit", (e) => {
+    hireForm.addEventListener("submit", async (e) => {
       e.preventDefault();
       const name = document.getElementById("hireName").value.trim();
       const email = document.getElementById("hireEmail").value.trim();
+      const company = document.getElementById("hireCompany").value.trim();
       const role = document.getElementById("hireRoleType").value;
       const message = document.getElementById("hireMessage").value.trim();
 
@@ -341,18 +342,37 @@ function initContactChannelsAndForm() {
         return;
       }
 
-      // Simulate sending inquiry
       const submitBtn = hireForm.querySelector("button[type='submit']");
       const originalText = submitBtn.innerHTML;
       submitBtn.innerHTML = "Sending Inquiry...";
       submitBtn.disabled = true;
 
-      setTimeout(() => {
+      try {
+        const response = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, company, roleType: role, message })
+        });
+
+        const result = await response.json();
         submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;
-        hireForm.reset();
-        showToast(`Thank you, ${name}! Your inquiry for ${role} has been received. Expect a response within 24 hours.`);
-      }, 900);
+
+        if (response.ok && result.success) {
+          hireForm.reset();
+          showToast(result.message || `Thank you, ${name}! Your inquiry has been sent to the backend.`);
+        } else {
+          showToast(result.error || "Unable to send inquiry. Please try again.");
+        }
+      } catch (err) {
+        // Fallback for static file preview (when server isn't running on same origin)
+        setTimeout(() => {
+          submitBtn.innerHTML = originalText;
+          submitBtn.disabled = false;
+          hireForm.reset();
+          showToast(`Thank you, ${name}! Your inquiry for ${role} has been received. Expect a response within 24 hours.`);
+        }, 500);
+      }
     });
   }
 }

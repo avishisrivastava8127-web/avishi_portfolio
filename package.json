@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "High-performance interactive portfolio website for Avishi Srivastava",
   "scripts": {
-    "start": "npx serve .",
-    "dev": "npx serve ."
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "keywords": [
     "portfolio",
@@ -14,5 +14,9 @@
     "projects"
   ],
   "author": "Avishi Srivastava",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0"
+  }
 }
