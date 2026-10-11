@@ -215,30 +215,16 @@ function renderResume() {
 
   // Header
   const titleEl = document.getElementById("resumeTitle");
+  const subEl = document.getElementById("resumeSubtitle");
   const contactEl = document.getElementById("resumeContactLine");
   const summaryEl = document.getElementById("resumeProfileSummary");
   const photoEl = document.getElementById("resumePhoto");
 
   if (titleEl) titleEl.textContent = resume.title;
+  if (subEl) subEl.textContent = (resume.subtitle || "") + " • " + (resume.institution || "");
   if (contactEl) contactEl.textContent = resume.contactLine;
   if (summaryEl) summaryEl.textContent = resume.profileSummary;
   if (photoEl) photoEl.src = resume.photo;
-
-  // Work Timeline
-  const expContainer = document.getElementById("timelineExperience");
-  if (expContainer && resume.experience) {
-    expContainer.innerHTML = resume.experience.map(job => `
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <h4 class="timeline-role">${job.role}</h4>
-        <div class="timeline-company">${job.company} • ${job.location}</div>
-        <div class="timeline-date">${job.period}</div>
-        <ul class="timeline-bullets">
-          ${job.points.map(p => `<li>${p}</li>`).join("")}
-        </ul>
-      </div>
-    `).join("");
-  }
 
   // Education
   const eduContainer = document.getElementById("resumeEducation");
@@ -247,7 +233,26 @@ function renderResume() {
       <div class="resume-edu-card">
         <div class="edu-degree">${edu.degree}</div>
         <div class="edu-institution">${edu.institution} (${edu.period})</div>
-        <div class="edu-meta">${edu.score} • ${edu.highlights}</div>
+        <div class="edu-meta"><strong>${edu.score}</strong> • ${edu.highlights}</div>
+      </div>
+    `).join("");
+  }
+
+  // Achievements
+  const achContainer = document.getElementById("resumeAchievementsList");
+  if (achContainer && resume.achievements) {
+    achContainer.innerHTML = resume.achievements.map(ach => `
+      <div style="margin-bottom: 16px;">
+        <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-main); margin-bottom: 6px;">
+          ${ach.title}
+        </h4>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 4px; padding-left: 16px;">
+          ${ach.points.map(p => `
+            <li style="font-size: 0.88rem; color: var(--text-muted); position: relative;">
+              <span style="position: absolute; left: -14px; color: var(--accent-cyan);">▹</span> ${p}
+            </li>
+          `).join("")}
+        </ul>
       </div>
     `).join("");
   }
@@ -255,30 +260,32 @@ function renderResume() {
   // Skills
   const skillsContainer = document.getElementById("resumeSkillsGroup");
   if (skillsContainer && resume.skills) {
-    const categories = [
-      { label: "Languages", items: resume.skills.languages },
-      { label: "Frameworks & Libraries", items: resume.skills.frameworks },
-      { label: "Cloud & DevOps", items: resume.skills.cloudDevops },
-      { label: "Databases & Storage", items: resume.skills.databases },
-      { label: "Engineering Practices", items: resume.skills.practices }
-    ];
-
-    skillsContainer.innerHTML = categories.map(cat => `
-      <div>
-        <div class="skill-category-title">${cat.label}</div>
+    skillsContainer.innerHTML = `
+      <div style="margin-bottom: 14px;">
+        <div class="skill-category-title">Programming Languages</div>
         <div class="skill-pills-wrap">
-          ${cat.items.map(s => `<span class="skill-pill">${s}</span>`).join("")}
+          ${resume.skills.languages.map(s => `<span class="skill-pill">${s}</span>`).join("")}
         </div>
       </div>
-    `).join("");
-  }
-
-  // Certifications list in resume sidebar
-  const certContainer = document.getElementById("resumeCertList");
-  if (certContainer && resume.certifications) {
-    certContainer.innerHTML = resume.certifications.map(c => `
-      <li>${c}</li>
-    `).join("");
+      <div style="margin-bottom: 14px;">
+        <div class="skill-category-title">Areas of Interest</div>
+        <div class="skill-pills-wrap">
+          ${resume.skills.interests.map(s => `<span class="skill-pill">${s}</span>`).join("")}
+        </div>
+      </div>
+      <div style="margin-bottom: 14px;">
+        <div class="skill-category-title">Core Competencies</div>
+        <div class="skill-pills-wrap">
+          ${resume.skills.competencies.map(s => `<span class="skill-pill" style="border-color: rgba(99, 102, 241, 0.4);">${s}</span>`).join("")}
+        </div>
+      </div>
+      <div>
+        <div class="skill-category-title">Technical Development</div>
+        <div class="skill-pills-wrap">
+          ${resume.skills.technicalDev.map(s => `<span class="skill-pill">${s}</span>`).join("")}
+        </div>
+      </div>
+    `;
   }
 
   // Print button listener
@@ -300,6 +307,30 @@ function renderResume() {
     });
   }
 }
+
+window.openResumeModal = function() {
+  const contentEl = document.getElementById("modalContent");
+  const backdrop = document.getElementById("modalBackdrop");
+  if (!contentEl || !backdrop) return;
+
+  contentEl.innerHTML = `
+    <div style="text-align: center;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <div style="text-align: left;">
+          <h3 style="font-size: 1.3rem; font-weight: 800; margin-bottom: 2px;">Avishi Srivastava — Photo Resume</h3>
+          <p style="font-size: 0.85rem; color: var(--accent-cyan);">Vellore Institute of Technology, Vellore · AI &amp; ML</p>
+        </div>
+        <a href="assets/images/resume.jpg" download="Avishi_Srivastava_Resume.jpg" class="btn-primary" style="padding: 8px 16px; font-size: 0.85rem;">
+          Download JPG ⬇
+        </a>
+      </div>
+      <div style="background: #ffffff; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);">
+        <img src="assets/images/resume.jpg" alt="Avishi Srivastava Full Photo Resume" style="width: 100%; height: auto; display: block;" />
+      </div>
+    </div>
+  `;
+  backdrop.classList.add("open");
+};
 
 /* ==========================================================================
    CONTACT FOR HIRING & FORM HANDLING

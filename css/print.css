@@ -51,14 +51,22 @@
     box-shadow: none !important;
   }
 
-  .resume-header-row {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    border-bottom: 2pt solid #0f172a !important;
-    padding-bottom: 12pt !important;
-    margin-bottom: 16pt !important;
-    page-break-inside: avoid;
+  .resume-document-card {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+  }
+
+  .resume-document-img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .resume-doc-footer,
+  .resume-hover-overlay {
+    display: none !important;
   }
 
   .resume-portrait {

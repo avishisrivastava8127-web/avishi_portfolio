@@ -1,27 +1,28 @@
 /**
  * PORTFOLIO DATA CONFIGURATION
- * Edit this file to customize all details, projects, achievements, and contact information.
+ * Synchronized with Avishi Srivastava's Official Resume & Profile
  */
 
 const portfolioData = {
   personal: {
     name: "Avishi Srivastava",
-    role: "Full-Stack Software Engineer & Creative Technologist",
-    statusBadge: "Available for Full-Time Roles & Consulting",
-    tagline: "Architecting high-performance web systems, distributed cloud applications, and AI-driven digital experiences.",
+    role: "B.Tech in Computer Science and Engineering (AI & ML)",
+    institution: "Vellore Institute of Technology, Vellore",
+    statusBadge: "Available for Internships & Collaborative Projects",
+    tagline: "LEARN / BUILD / GROW • Passionate about AI, Machine Learning, and Problem-Solving.",
     avatar: "assets/images/avatar.svg",
-    location: "Bengaluru, India (Open to Relocation & Remote)",
-    email: "avishi.srivastava.dev@gmail.com",
-    phone: "+91 98765 43210",
-    linkedin: "https://linkedin.com/in/avishi-srivastava",
-    github: "https://github.com/avishi-srivastava",
-    twitter: "https://twitter.com/avishi_dev",
-    summary: "Innovative and results-driven Software Engineer with proven expertise building resilient distributed architectures, modern front-end user experiences, and production machine learning workflows. Adept at turning intricate problem spaces into high-throughput, elegant software that delivers measurable impact.",
+    resumeImage: "assets/images/resume.jpg",
+    location: "VIT Vellore, Tamil Nadu, India",
+    email: "avishisrivastava8127@gmail.com",
+    phone: "8318676578",
+    github: "https://github.com/avishisrivastava8127-web",
+    projectUrl: "https://fantasticfive-hg-26.vercel.app/",
+    summary: "First-year B.Tech CSE student at VIT Vellore, specialising in Artificial Intelligence and Machine Learning. Passionate about technology, problem-solving and creating meaningful solutions. Recognised as a second runner-up at the HackGrid Hackathon, with strong interests in public speaking, team management and collaboration. Currently building my programming skills in Java and Python while exploring opportunities to contribute to innovative projects and grow in the tech community.",
     stats: [
-      { label: "Flagship System", value: "KhetiNex" },
-      { label: "Hackathons & Awards", value: "8+" },
-      { label: "Open Source Commits", value: "1,200+" },
-      { label: "System Uptime Track", value: "99.98%" }
+      { label: "HackGrid Hackathon", value: "2nd Runner-Up" },
+      { label: "Competing Teams", value: "53 Teams" },
+      { label: "Class XII CS", value: "100 / 100" },
+      { label: "Class XII Overall", value: "97.5%" }
     ]
   },
 
@@ -29,75 +30,51 @@ const portfolioData = {
   achievements: [
     {
       id: "ach-1",
-      title: "1st Place Winner — Global AI Agent Hackathon 2025",
+      title: "Second Runner-Up — HackGrid Hackathon (53 Teams)",
       category: "Hackathon",
-      organization: "Hugging Face & Anthropic Community",
-      date: "Nov 2025",
-      icon: "🏆",
-      description: "Spearheaded an autonomous multi-agent developer copilot that dynamically compiles, tests, and resolves pull requests in microservice ecosystems.",
-      metrics: "Outperformed 450+ international developer teams",
-      credentialUrl: "https://example.com/certificate/hackathon-winner",
-      credentialId: "CERT-AI-AGENTS-2025"
+      organization: "HackGrid Hackathon Community",
+      date: "2026",
+      icon: "🥈",
+      description: "Secured second runner-up position in a competitive hackathon out of 53 teams. Collaborated with teammates to develop and present KhetiNex BioChain, an innovative technical solution for agricultural price arbitrage and smart contracts.",
+      metrics: "Rank: 2nd Runner-Up out of 53 Teams",
+      credentialUrl: "https://fantasticfive-hg-26.vercel.app/",
+      credentialId: "HACKGRID-2026-RUNNERUP"
     },
     {
       id: "ach-2",
-      title: "AWS Certified Solutions Architect – Associate",
-      category: "Certification",
-      organization: "Amazon Web Services",
-      date: "Aug 2025",
-      icon: "☁️",
-      description: "Demonstrated mastery in deploying secure, resilient, high-availability cloud infrastructures using serverless Lambdas, ECS, and DynamoDB.",
-      metrics: "Score: 920 / 1000",
-      credentialUrl: "https://aws.amazon.com/verification",
-      credentialId: "AWS-SAA-8842109"
+      title: "Class XII CBSE Board Distinction — 100/100 in Computer Science",
+      category: "Academic",
+      organization: "Central Board of Secondary Education (CBSE)",
+      date: "2024 – 2025",
+      icon: "🎖️",
+      description: "Achieved a perfect score of 100/100 in Computer Science with a 97.5% overall grade, showing consistent academic excellence and strong conceptual foundation in computing.",
+      metrics: "Computer Science: 100/100 • Overall: 97.5%",
+      credentialUrl: "#",
+      credentialId: "CBSE-XII-97.5-CS100"
     },
     {
       id: "ach-3",
-      title: "Dean's Excellence Award for Academic & Technical Merit",
-      category: "Academic",
-      organization: "Institute of Engineering & Technology",
-      date: "May 2025",
-      icon: "🎖️",
-      description: "Conferred for ranking in the top 1% of the Computer Science cohort and publishing undergraduate research in distributed cache synchronization.",
-      metrics: "Top 1% Department Rank • CGPA: 9.4/10.0",
-      credentialUrl: "https://example.com/certificate/deans-list",
-      credentialId: "ACAD-HONOR-2025-01"
+      title: "Debate Competitions Winner & Speaker",
+      category: "Public Speaking",
+      organization: "Inter-School & Collegiate Debate Circuits",
+      date: "2023 – Present",
+      icon: "🎙️",
+      description: "Participated in multiple debate competitions and won several events, showcasing strong public speaking, critical thinking, teamwork, and persuasive communication skills.",
+      metrics: "Multiple Tournament Victories & Honors",
+      credentialUrl: "#",
+      credentialId: "DEBATE-EXCELLENCE"
     },
     {
       id: "ach-4",
-      title: "Google Cloud Innovator Champion",
-      category: "Certification",
-      organization: "Google Cloud Platform",
-      date: "Feb 2025",
-      icon: "⚡",
-      description: "Recognized for community leadership, architecting Kubernetes GKE pipelines, and publishing open-source terraform automation modules.",
-      metrics: "Selected among top 50 emerging cloud architects",
-      credentialUrl: "https://cloud.google.com/innovators",
-      credentialId: "GCP-INN-59312"
-    },
-    {
-      id: "ach-5",
-      title: "Smart India Hackathon Finalist & Top Innovator",
-      category: "Hackathon",
-      organization: "Ministry of Education & AICTE",
-      date: "Dec 2024",
-      icon: "🥇",
-      description: "Built an offline-first distributed medical inventory allocation dashboard utilizing lightweight edge PWA architectures and encrypted SQLite synchronization.",
-      metrics: "Selected from 65,000+ participating candidates nationwide",
-      credentialUrl: "https://sih.gov.in",
-      credentialId: "SIH-2024-NAT-77"
-    },
-    {
-      id: "ach-6",
-      title: "Open Source Core Contributor Badge",
-      category: "Open Source",
-      organization: "React & Next.js Ecosystem Community",
-      date: "Ongoing",
-      icon: "🚀",
-      description: "Authored optimizations for client-side tree-shaking and responsive image loading pipelines adopted by over 20,000+ weekly NPM installs.",
-      metrics: "12 Merged PRs in widely adopted tools",
-      credentialUrl: "https://github.com",
-      credentialId: "GH-OSS-CONTRIB"
+      title: "Class X CBSE Board High Distinction — 95.8% Overall",
+      category: "Academic",
+      organization: "Central Board of Secondary Education (CBSE)",
+      date: "2022 – 2023",
+      icon: "📚",
+      description: "Demonstrated consistent academic performance and strong conceptual understanding with 95.8% overall in CBSE Class X board examinations.",
+      metrics: "Overall: 95.8% Distinction",
+      credentialUrl: "#",
+      credentialId: "CBSE-X-95.8"
     }
   ],
 
@@ -107,17 +84,17 @@ const portfolioData = {
       id: "proj-khetinex-biochain",
       title: "KhetiNex BioChain — Autonomous Agri-Tech & APMC Mandi Arbitrage Exchange",
       category: "agritech",
-      categoryLabel: "Web3 & Agri-Tech",
+      categoryLabel: "Web3 & Agri-Tech (HackGrid Project)",
       image: "assets/images/project-biochain.svg",
-      summary: "Decentralized agricultural trading desk and mandi arbitrage platform providing cross-corridor wholesale price discovery, AI harvest proof, and automated forward smart contracts.",
+      summary: "Second Runner-Up at HackGrid Hackathon (53 Teams). Decentralized agricultural trading desk and mandi arbitrage platform providing cross-corridor wholesale price discovery, AI harvest proof, and automated forward smart contracts.",
       tags: ["React 19", "Vite", "Tailwind CSS", "Web3 Smart Contracts", "Google Maps API", "APMC Feeds", "Vercel"],
       liveUrl: "https://fantasticfive-hg-26.vercel.app/",
-      githubUrl: "https://github.com/avishisrivastava8127-web/avishi_portfolio",
+      githubUrl: "https://github.com/avishisrivastava8127-web",
       featured: true,
-      metrics: "Live Multi-Mandi Arbitrage Engine & Smart Contract Deal Room",
+      metrics: "2nd Runner-Up at HackGrid Hackathon (53 Teams)",
       details: {
         problem: "Agricultural producers and bulk commodity buyers endure fragmented wholesale pricing, high intermediary commissions, and unreliable manual quality inspections across regional APMC mandis.",
-        solution: "Engineered BioChain (Fantastic Five), a unified agri-tech platform integrating real-time APMC price telemetry, Google Maps logistics arbitrage routing, escrow-backed forward smart contracts, and AI harvest quality verification.",
+        solution: "Engineered KhetiNex BioChain (team Fantastic Five) during the HackGrid Hackathon: a unified agri-tech platform integrating real-time APMC price telemetry, Google Maps logistics arbitrage routing, escrow-backed forward smart contracts, and AI harvest quality verification.",
         keyFeatures: [
           "Mandi Arbitrage Engine: Real-time price discovery comparing rates across Mumbai Vashi, Bangalore, Delhi Azadpur, Nashik, and Indore APMCs",
           "Automated Forward Smart Contracts: Dynamic crop valuation, transit spoilage caps, and cryptographic contract generation",
@@ -130,86 +107,95 @@ const portfolioData = {
 
   // 📄 PHOTO RESUME DATA
   resume: {
-    photo: "assets/images/avatar.svg",
-    title: "Avishi Srivastava — Full Stack Software Engineer",
-    contactLine: "avishi.srivastava.dev@gmail.com • +91 98765 43210 • Bengaluru, India • linkedin.com/in/avishi-srivastava",
-    profileSummary: "Accomplished Software Engineer with a rigorous foundation in Computer Science and comprehensive experience developing enterprise-grade web applications, microservices, and AI integrations. Demonstrates expertise across TypeScript, React, Node.js, Python, and Cloud Native Architectures (AWS/GCP). Proven track record of improving system latency by 40%, mentoring peer developers, and shipping products from zero to scaled production.",
+    photo: "assets/images/resume.jpg",
+    title: "Avishi Srivastava",
+    subtitle: "B.Tech in Computer Science and Engineering (Artificial Intelligence & Machine Learning)",
+    institution: "Vellore Institute of Technology, Vellore",
+    contactLine: "avishisrivastava8127@gmail.com • 8318676578 • github.com/avishisrivastava8127-web • fantasticfive-hg-26.vercel.app",
+    profileSummary: "First-year B.Tech CSE student at VIT Vellore, specialising in Artificial Intelligence and Machine Learning. Passionate about technology, problem-solving and creating meaningful solutions. Recognised as a second runner-up at the HackGrid Hackathon, with strong interests in public speaking, team management and collaboration. Currently building my programming skills in Java and Python while exploring opportunities to contribute to innovative projects and grow in the tech community.",
     
-    experience: [
+    education: [
       {
-        role: "Software Development Engineer",
-        company: "Apex Cloud Technologies",
-        period: "2024 — Present",
-        location: "Bengaluru, India",
-        points: [
-          "Architected and deployed microservices handling 25M+ daily requests utilizing Node.js, Express, and Redis caching layers.",
-          "Spearheaded redesign of customer web portal with React and TypeScript, boosting Core Web Vitals to 98% and reducing churn by 18%.",
-          "Designed automated CI/CD canary deployment pipelines using Docker, GitHub Actions, and AWS ECS, minimizing release downtime.",
-          "Mentored 6 junior engineers and interns in asynchronous programming paradigms and automated test suite design (Jest/Cypress)."
-        ]
+        institution: "Vellore Institute of Technology, Vellore",
+        degree: "B.Tech in Computer Science and Engineering (Specialisation: AI & ML)",
+        period: "2026 – Present",
+        score: "Pursuing First Year",
+        highlights: "Focus on AI & Machine Learning, Data Structures, and Computational Foundations"
       },
       {
-        role: "Full-Stack Engineering Intern",
-        company: "Cognitive Matrix Labs",
-        period: "2023 — 2024",
-        location: "Remote / Hybrid",
-        points: [
-          "Engineered interactive analytics dashboards with Next.js, Tailwind CSS, and D3.js visualization charts.",
-          "Integrated generative AI APIs (OpenAI, Claude, and local Ollama) into workflow copilot features utilized by 10,000+ active users.",
-          "Optimized PostgreSQL schema queries and indexing, reducing peak reporting execution time by 62%."
-        ]
+        institution: "Class XII (CBSE)",
+        degree: "Higher Secondary Certificate",
+        period: "2024 – 2025",
+        score: "97.5% overall • Computer Science: 100/100",
+        highlights: "Perfect 100/100 score in Computer Science"
       },
       {
-        role: "Open Source Contributor & Technical Fellow",
-        company: "Developer Guild Initiative",
-        period: "2022 — 2023",
-        location: "Community",
-        points: [
-          "Collaborated on modern UI component design systems and accessibility auditing adhering strictly to WCAG 2.1 AA standards.",
-          "Authored comprehensive technical guides on distributed systems and micro-frontends with over 80,000 collective reads."
-        ]
+        institution: "Class X (CBSE)",
+        degree: "Secondary School Examination",
+        period: "2022 – 2023",
+        score: "95.8% overall",
+        highlights: "Consistent academic performance and conceptual understanding"
       }
     ],
 
-    education: [
+    achievements: [
       {
-        degree: "Bachelor of Technology (B.Tech) in Computer Science & Engineering",
-        institution: "National Institute of Technology / Leading Tech University",
-        period: "2020 — 2024",
-        score: "CGPA: 9.4 / 10.0 (First Class with Distinction)",
-        highlights: "Dean's Honor Roll, Secretary of ACM Student Chapter, Lead Organizer for Annual Hackathon"
+        title: "Second Runner-Up — HackGrid Hackathon (53 Teams)",
+        points: [
+          "Secured second runner-up position in a competitive hackathon.",
+          "Collaborated with teammates to develop and present a technical solution.",
+          "Project Link: fantasticfive-hg-26.vercel.app"
+        ]
+      },
+      {
+        title: "Debate Competitions",
+        points: [
+          "Participated in multiple debate competitions and won several events, showcasing strong public speaking, critical thinking and persuasive communication skills."
+        ]
+      },
+      {
+        title: "Academic Highlights",
+        points: [
+          "Scored 97.5% in Class XII (Computer Science – 100/100) and 95.8% in Class X.",
+          "Consistent academic performance and strong conceptual understanding."
+        ]
       }
     ],
 
     skills: {
-      languages: ["JavaScript (ES6+)", "TypeScript", "Python", "Go (Golang)", "SQL", "HTML5/CSS3"],
-      frameworks: ["React.js", "Next.js", "Node.js", "Express", "FastAPI", "Tailwind CSS", "Redux/Zustand"],
-      cloudDevops: ["AWS (S3, Lambda, ECS, RDS)", "Docker", "Kubernetes", "Git & GitHub Actions", "Nginx", "Linux/Bash"],
-      databases: ["PostgreSQL", "MongoDB", "Redis", "Pinecone (Vector DB)", "TimescaleDB"],
-      practices: ["Microservices", "REST & GraphQL", "CI/CD GitOps", "System Design", "Agile/Scrum", "TDD & Unit Testing"]
+      languages: ["Python (learning)", "Java (learning)"],
+      interests: ["Artificial Intelligence", "Machine Learning", "Software Development"],
+      competencies: [
+        "Public Speaking and Presentation",
+        "Team Management",
+        "Communication",
+        "Collaboration",
+        "Critical Thinking",
+        "Problem Solving"
+      ],
+      technicalDev: ["Programming fundamentals and problem-solving"]
     },
 
-    certifications: [
-      "AWS Certified Solutions Architect – Associate",
-      "Google Cloud Innovator Champion",
-      "Meta Certified Front-End Developer Specialization",
-      "HackerRank Problem Solving (Advanced) & Algorithms"
+    additionalInterests: [
+      "Technology and Innovation",
+      "Debate",
+      "Public Speaking",
+      "Collaborative Problem-Solving"
     ]
   },
 
-  // 💼 CONTACT FOR HIRING
+  // 💼 CONTACT FOR HIRING & OPPORTUNITIES
   hiring: {
-    statusText: "Currently accepting inquiries for Full-time roles, Staff/Senior IC positions, and Architecture Consulting.",
+    statusText: "Open to Technical Internships, Research Collaborations, and Open-Source Opportunities.",
     targetRoles: [
-      "Full-Stack Software Engineer",
-      "Senior Frontend / React Architect",
-      "Backend / Distributed Systems Engineer",
-      "AI / Machine Learning Application Engineer",
-      "Technical Lead / Founding Engineer"
+      "Software Engineering Intern",
+      "AI / Machine Learning Intern",
+      "Frontend / Full-Stack Contributor",
+      "Hackathon Collaboration Partner"
     ],
-    timeline: "Immediate to 30 Days Notice",
-    preferredLocation: "Bengaluru, Hybrid, or Global Remote",
-    responseGuarantee: "Guaranteed response within 24 business hours"
+    timeline: "Available Immediately for Part-time / Remote Internships & Projects",
+    preferredLocation: "VIT Vellore / Remote / Hybrid",
+    responseGuarantee: "Guaranteed reply within 24 hours"
   }
 };
 
