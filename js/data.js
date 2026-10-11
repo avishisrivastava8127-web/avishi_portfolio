@@ -104,6 +104,29 @@ const portfolioData = {
   // 💻 PROJECTS BUILT
   projects: [
     {
+      id: "proj-biochain",
+      title: "BioChain — Autonomous Agri-Tech & APMC Mandi Arbitrage Exchange",
+      category: "web3",
+      categoryLabel: "Web3 & Agri-Tech",
+      image: "assets/images/project-biochain.svg",
+      summary: "Decentralized agricultural trading desk and mandi arbitrage platform providing cross-corridor wholesale price discovery, AI harvest proof, and automated forward smart contracts.",
+      tags: ["React 19", "Vite", "Tailwind CSS", "Web3 Smart Contracts", "Google Maps API", "APMC Feeds", "Vercel"],
+      liveUrl: "https://fantasticfive-hg-26.vercel.app/",
+      githubUrl: "https://github.com/avishisrivastava8127-web/avishi_portfolio",
+      featured: true,
+      metrics: "Live Multi-Mandi Arbitrage Engine & Smart Contract Deal Room",
+      details: {
+        problem: "Agricultural producers and bulk commodity buyers endure fragmented wholesale pricing, high intermediary commissions, and unreliable manual quality inspections across regional APMC mandis.",
+        solution: "Engineered BioChain (Fantastic Five), a unified agri-tech platform integrating real-time APMC price telemetry, Google Maps logistics arbitrage routing, escrow-backed forward smart contracts, and AI harvest quality verification.",
+        keyFeatures: [
+          "Mandi Arbitrage Engine: Real-time price discovery comparing rates across Mumbai Vashi, Bangalore, Delhi Azadpur, Nashik, and Indore APMCs",
+          "Automated Forward Smart Contracts: Dynamic crop valuation, transit spoilage caps, and cryptographic contract generation",
+          "AI Harvest Proof & Quality Hub: Standardized checks for moisture levels, grain health, cleanliness, and FSSAI regulatory compliance",
+          "Logistics & Route Optimization: Interactive Google Maps visualizer calculating distance, transit hours, and net profit margins (+₹480/MT)"
+        ]
+      }
+    },
+    {
       id: "proj-1",
       title: "CogniVerse — Multi-Modal Neural Search Engine",
       category: "ai",
