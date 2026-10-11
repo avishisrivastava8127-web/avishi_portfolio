@@ -18,7 +18,7 @@ const portfolioData = {
     twitter: "https://twitter.com/avishi_dev",
     summary: "Innovative and results-driven Software Engineer with proven expertise building resilient distributed architectures, modern front-end user experiences, and production machine learning workflows. Adept at turning intricate problem spaces into high-throughput, elegant software that delivers measurable impact.",
     stats: [
-      { label: "Completed Projects", value: "24+" },
+      { label: "Flagship System", value: "KhetiNex" },
       { label: "Hackathons & Awards", value: "8+" },
       { label: "Open Source Commits", value: "1,200+" },
       { label: "System Uptime Track", value: "99.98%" }
@@ -104,9 +104,9 @@ const portfolioData = {
   // 💻 PROJECTS BUILT
   projects: [
     {
-      id: "proj-biochain",
-      title: "BioChain — Autonomous Agri-Tech & APMC Mandi Arbitrage Exchange",
-      category: "web3",
+      id: "proj-khetinex-biochain",
+      title: "KhetiNex BioChain — Autonomous Agri-Tech & APMC Mandi Arbitrage Exchange",
+      category: "agritech",
       categoryLabel: "Web3 & Agri-Tech",
       image: "assets/images/project-biochain.svg",
       summary: "Decentralized agricultural trading desk and mandi arbitrage platform providing cross-corridor wholesale price discovery, AI harvest proof, and automated forward smart contracts.",
@@ -123,144 +123,6 @@ const portfolioData = {
           "Automated Forward Smart Contracts: Dynamic crop valuation, transit spoilage caps, and cryptographic contract generation",
           "AI Harvest Proof & Quality Hub: Standardized checks for moisture levels, grain health, cleanliness, and FSSAI regulatory compliance",
           "Logistics & Route Optimization: Interactive Google Maps visualizer calculating distance, transit hours, and net profit margins (+₹480/MT)"
-        ]
-      }
-    },
-    {
-      id: "proj-1",
-      title: "CogniVerse — Multi-Modal Neural Search Engine",
-      category: "ai",
-      categoryLabel: "AI & Machine Learning",
-      image: "assets/images/project1.svg",
-      summary: "High-performance enterprise search engine merging vector embeddings, semantic retrieval, and multi-modal generative responses with sub-100ms latency.",
-      tags: ["Python", "FastAPI", "React", "Vector DB (Pinecone)", "PyTorch", "Docker"],
-      liveUrl: "https://cogniverse-ai.example.com",
-      githubUrl: "https://github.com/avishi-srivastava/cogniverse-ai",
-      featured: true,
-      metrics: "Sub-100ms queries across 1.2M+ document vectors",
-      details: {
-        problem: "Traditional keyword search failed on complex domain-specific technical documentation and unstructured knowledge bases.",
-        solution: "Engineered a hybrid retrieval system pairing BM25 keyword matching with dense vector embeddings and a dynamic context re-ranking cross-encoder.",
-        keyFeatures: [
-          "Zero-shot semantic understanding with custom fine-tuned transformer models",
-          "Interactive conversational sidecar providing cited code snippets and sources",
-          "Automated ingestion pipeline handling PDF, Markdown, and API specifications",
-          "Containerized with Docker & deployed on auto-scaling Kubernetes cluster"
-        ]
-      }
-    },
-    {
-      id: "proj-2",
-      title: "Stratos — High-Throughput Cloud Telemetry Dashboard",
-      category: "fullstack",
-      categoryLabel: "Full-Stack & Cloud",
-      image: "assets/images/project2.svg",
-      summary: "Distributed real-time observability platform monitoring serverless microservice health, latency distributions, and proactive anomaly warnings.",
-      tags: ["TypeScript", "Next.js", "Go (Golang)", "TimescaleDB", "Tailwind CSS", "WebSockets"],
-      liveUrl: "https://stratos-metrics.example.com",
-      githubUrl: "https://github.com/avishi-srivastava/stratos-telemetry",
-      featured: true,
-      metrics: "Processes 4.8M metrics/minute with 99.995% uptime",
-      details: {
-        problem: "Existing enterprise monitoring tools were exorbitantly expensive and incurred excessive payload serialization overhead.",
-        solution: "Developed an ultra-lightweight Go telemetry ingestion daemon streaming binary-encoded metric packets into time-series partitions with Next.js web client.",
-        keyFeatures: [
-          "Real-time dynamic visualization of P95/P99 latency heatmaps",
-          "Automated threshold alarms routing to Slack and PagerDuty webhooks",
-          "Custom canvas graph rendering supporting 100k+ data points without dropped frames",
-          "Granular role-based access control with secure OAuth2 / JWT authentication"
-        ]
-      }
-    },
-    {
-      id: "proj-3",
-      title: "Aura Commerce — Headless Next-Gen Storefront",
-      category: "frontend",
-      categoryLabel: "Frontend & UI/UX",
-      image: "assets/images/project3.svg",
-      summary: "Ultra-fast headless e-commerce experience with sub-second page transitions, dynamic 3D asset previews, and seamless localized Stripe checkout.",
-      tags: ["React 19", "Three.js", "Zustand", "Stripe API", "CSS Modules", "Vercel"],
-      liveUrl: "https://aura-commerce.example.com",
-      githubUrl: "https://github.com/avishi-srivastava/aura-commerce",
-      featured: true,
-      metrics: "100/100 Google Lighthouse Performance Score",
-      details: {
-        problem: "Monolithic e-commerce storefronts suffered from sluggish mobile checkout funnels and high bounce rates.",
-        solution: "Engineered an edge-rendered headless web shop with optimistic cart mutations, micro-animations, and instant localized payment processing.",
-        keyFeatures: [
-          "Interactive WebGL product preview allowing 360-degree rotation",
-          "Optimistic UI updates delivering instantaneous cart state changes",
-          "PWA offline caching for product catalogs in low-connectivity areas",
-          "Integrated Stripe Elements checkout with Apple Pay & Google Pay support"
-        ]
-      }
-    },
-    {
-      id: "proj-4",
-      title: "SyncMesh — Collaborative Real-Time Code Canvas",
-      category: "fullstack",
-      categoryLabel: "Full-Stack & Systems",
-      image: "assets/images/project4.svg",
-      summary: "Peer-to-peer collaborative code editor and whiteboard backed by conflict-free replicated data types (CRDTs) and WebRTC data channels.",
-      tags: ["Node.js", "CRDTs (Yjs)", "WebRTC", "Monaco Editor", "Express", "Redis"],
-      liveUrl: "https://syncmesh-ide.example.com",
-      githubUrl: "https://github.com/avishi-srivastava/syncmesh-ide",
-      featured: false,
-      metrics: "Tested with 25+ simultaneous zero-conflict typists",
-      details: {
-        problem: "Remote pair programming tools often suffer from merge desynchronization and typing lag across distant geolocations.",
-        solution: "Implemented peer-to-peer data mesh synchronization using state-based CRDTs, falling back to distributed Redis pub/sub when direct WebRTC fails.",
-        keyFeatures: [
-          "Sub-15ms typing synchronization with zero central server lock contention",
-          "Integrated in-browser code execution sandbox supporting JS, Python, and Go",
-          "Live presence indicator with user cursor tags and voice channel",
-          "Version checkpointing with visual diff replay"
-        ]
-      }
-    },
-    {
-      id: "proj-5",
-      title: "QuantPulse — Algorithmic FinTech Portfolio Engine",
-      category: "ai",
-      categoryLabel: "FinTech & Data Science",
-      image: "assets/images/project5.svg",
-      summary: "Automated quantitative portfolio manager tracking multi-asset correlations, Monte Carlo risk projections, and automated rebalancing alerts.",
-      tags: ["Python", "Pandas", "FastAPI", "React", "Chart.js", "PostgreSQL"],
-      liveUrl: "https://quantpulse.example.com",
-      githubUrl: "https://github.com/avishi-srivastava/quantpulse-algo",
-      featured: false,
-      metrics: "Simulates 10,000 Monte Carlo runs in 1.4 seconds",
-      details: {
-        problem: "Retail and boutique investors lack access to institutional-grade Sharpe risk modeling and automated asset rebalancing simulations.",
-        solution: "Created an intuitive full-stack platform that fetches real-time market ticks, computes modern portfolio theory metrics, and advises tactical adjustments.",
-        keyFeatures: [
-          "Automated Sharpe, Treynor, and Sortino risk ratio calculations",
-          "Interactive Monte Carlo simulation visualizer with confidence bands",
-          "Automated tax-loss harvesting and periodic rebalancing triggers",
-          "Exportable institutional PDF investment prospectus reports"
-        ]
-      }
-    },
-    {
-      id: "proj-6",
-      title: "FluxOrchestrator — Zero-Downtime K8s CI/CD Daemon",
-      category: "devops",
-      categoryLabel: "Cloud & DevOps",
-      image: "assets/images/project6.svg",
-      summary: "GitOps automation CLI and web controller orchestrating canary rollouts, automated rollback gates, and container vulnerability audits.",
-      tags: ["Go", "Kubernetes", "Helm", "Prometheus", "Docker", "GitHub Actions"],
-      liveUrl: "https://flux-orchestrator.example.com",
-      githubUrl: "https://github.com/avishi-srivastava/flux-orchestrator",
-      featured: false,
-      metrics: "Reduced average deployment lead time from 45m to 6m",
-      details: {
-        problem: "Canary rollouts required manual Prometheus query inspection and prone-to-error manual kubectl step scaling.",
-        solution: "Wrote an autonomous Kubernetes controller that watches HTTP 5xx error rate spikes during progressive rollouts and automatically halts bad deployments.",
-        keyFeatures: [
-          "Automated progressive traffic shifting based on live Prometheus error rate metrics",
-          "Instant one-command rollback with automated Slack incident broadcasting",
-          "Pre-flight container image CVE vulnerability gating",
-          "Interactive terminal CLI and unified web dashboard"
         ]
       }
     }

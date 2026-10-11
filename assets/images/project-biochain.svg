@@ -33,7 +33,7 @@
     <rect width="530" height="52" rx="10" fill="#064e3b" stroke="#059669" stroke-width="1.2"/>
     <circle cx="28" cy="26" r="10" fill="#10b981" opacity="0.25"/>
     <text x="28" y="30" fill="#34d399" font-family="system-ui" font-size="12" font-weight="900" text-anchor="middle">🌱</text>
-    <text x="48" y="24" fill="#ffffff" font-family="system-ui" font-size="14" font-weight="800">BioChain · Mandi Arbitrage Engine</text>
+    <text x="48" y="24" fill="#ffffff" font-family="system-ui" font-size="14" font-weight="800">KhetiNex BioChain · Mandi Arbitrage</text>
     <text x="48" y="40" fill="#a7f3d0" font-family="system-ui" font-size="11">Autonomous APMC Price Feeds &amp; Smart Contracts</text>
 
     <rect x="420" y="12" width="95" height="28" rx="14" fill="url(#goldAccent)"/>
