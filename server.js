@@ -163,12 +163,16 @@ app.use((req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Start Server
-app.listen(PORT, () => {
-  console.log('====================================================');
-  console.log(`🚀 Portfolio App running at http://localhost:${PORT}`);
-  console.log(`📡 Frontend: http://localhost:${PORT}`);
-  console.log(`⚙️  Backend API: http://localhost:${PORT}/api/portfolio`);
-  console.log(`📬 Hiring Submissions API: http://localhost:${PORT}/api/contact`);
-  console.log('====================================================');
-});
+// Start Server when run directly
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log('====================================================');
+    console.log(`🚀 Portfolio App running at http://localhost:${PORT}`);
+    console.log(`📡 Frontend: http://localhost:${PORT}`);
+    console.log(`⚙️  Backend API: http://localhost:${PORT}/api/portfolio`);
+    console.log(`📬 Hiring Submissions API: http://localhost:${PORT}/api/contact`);
+    console.log('====================================================');
+  });
+}
+
+module.exports = app;

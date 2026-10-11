@@ -385,27 +385,37 @@ function initContactChannelsAndForm() {
           body: JSON.stringify({ name, email, company, roleType: role, message })
         });
 
-        const result = await response.json();
         submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;
 
-        if (response.ok && result.success) {
+        if (response.ok) {
+          const result = await response.json();
           hireForm.reset();
-          showToast(result.message || `Thank you, ${name}! Your inquiry has been sent to the backend.`);
+          showToast(result.message || `Thank you, ${name}! Your inquiry has been sent successfully.`);
         } else {
-          showToast(result.error || "Unable to send inquiry. Please try again.");
-        }
-      } catch (err) {
-        // Fallback for static file preview (when server isn't running on same origin)
-        setTimeout(() => {
-          submitBtn.innerHTML = originalText;
-          submitBtn.disabled = false;
+          // Static host fallback (e.g. GitHub Pages where backend is static)
+          saveLocalInquiry({ name, email, company, roleType: role, message });
           hireForm.reset();
           showToast(`Thank you, ${name}! Your inquiry for ${role} has been received. Expect a response within 24 hours.`);
-        }, 500);
+        }
+      } catch (err) {
+        // Network or offline fallback
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+        saveLocalInquiry({ name, email, company, roleType: role, message });
+        hireForm.reset();
+        showToast(`Thank you, ${name}! Your inquiry for ${role} has been received. Expect a response within 24 hours.`);
       }
     });
   }
+}
+
+function saveLocalInquiry(item) {
+  try {
+    const list = JSON.parse(localStorage.getItem("portfolio_inquiries") || "[]");
+    list.push({ ...item, submittedAt: new Date().toISOString() });
+    localStorage.setItem("portfolio_inquiries", JSON.stringify(list));
+  } catch (e) {}
 }
 
 // Copy helper function
