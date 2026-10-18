@@ -11,26 +11,43 @@
   <!-- Google Fonts Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Core Stylesheets -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/print.css" media="print">
 </head>
 <body>
-  <!-- Ambient Interactive Background Elements -->
-  <div class="ambient-bg"></div>
+  <!-- Ambient Interactive Background Elements (Cute yet Professional) -->
+  <div class="ambient-bg" id="ambientBg">
+    <div class="ambient-glow glow-indigo"></div>
+    <div class="ambient-glow glow-teal"></div>
+    <div class="ambient-glow glow-rose"></div>
+    <div class="ambient-glow glow-violet"></div>
+    <div class="ambient-cursor-glow" id="ambientCursorGlow"></div>
+  </div>
   <div class="ambient-grid"></div>
+  <div class="ambient-dots"></div>
+  <div class="ambient-sparkles" aria-hidden="true">
+    <span class="sparkle sparkle-1">✦</span>
+    <span class="sparkle sparkle-2">✧</span>
+    <span class="sparkle sparkle-3">✦</span>
+    <span class="sparkle sparkle-4">✧</span>
+    <span class="sparkle sparkle-5">✦</span>
+    <span class="sparkle sparkle-6">✧</span>
+    <span class="sparkle sparkle-7">✦</span>
+    <span class="sparkle sparkle-8">✧</span>
+  </div>
 
   <!-- ==========================================================================
-       SITE HEADER / NAVBAR
+       SITE HEADER / NAVBAR (Floating Neo-Glass Capsule)
        ========================================================================== -->
   <header class="site-header">
     <div class="container">
       <nav class="nav-wrapper">
         <a href="#intro" class="brand-logo" aria-label="Home">
           <div class="brand-icon">AS</div>
-          <span class="brand-text">Avishi<span>.dev</span></span>
+          <span class="brand-text">Avishi <span class="brand-sub">Srivastava</span></span>
         </a>
 
         <ul class="nav-links" id="navLinks">
@@ -71,12 +88,14 @@
               <span id="heroStatusText">Open to Software Engineering &amp; AI Internships</span>
             </div>
 
+            <div class="hero-eyebrow">Digital Dossier &amp; Engineering Portfolio</div>
+
             <h1 class="hero-title">
-              Hi, I'm <span class="gradient-text" id="heroName">Avishi Srivastava</span>
+              Avishi <span class="editorial-serif">Srivastava</span>
             </h1>
 
             <h2 class="hero-subtitle" id="heroRole">
-              B.Tech CSE (AI &amp; ML) · VIT Vellore
+              B.Tech Computer Science (AI &amp; ML) · VIT Vellore
             </h2>
 
             <p class="hero-description" id="heroDesc">
@@ -85,16 +104,16 @@
 
             <div class="hero-cta-group">
               <a href="#projects" class="btn-primary">
-                <span>Explore Projects Built</span>
+                <span>Inspect Selected Works</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
               </a>
               <a href="#resume" class="btn-secondary">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-                <span>View Photo Resume</span>
+                <span>Executive Dossier</span>
               </a>
               <a href="#contact" class="btn-secondary">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                <span>Contact for Hiring</span>
+                <span>Formal Inquiry</span>
               </a>
             </div>
 
@@ -102,35 +121,18 @@
               <a href="https://github.com/avishisrivastava8127-web" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
               </a>
-              <a href="https://fantasticfive-hg-26.vercel.app/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="KhetiNex BioChain Project">
+              <a href="https://45pxqhx1-5173.inc1.devtunnels.ms/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="StudyBuddy AI Platform">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </a>
+              <a href="https://fantasticfive-hg-26.vercel.app/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="KhetiNex BioChain Platform">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
               </a>
-              <a href="mailto:avishisrivastava8127@gmail.com" class="social-icon-btn" title="Send Direct Email">
+              <a href="mailto:avishisrivastava8127@gmail.com" class="social-icon-btn" title="Send Direct Correspondence">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
               </a>
             </div>
           </div>
 
-          <!-- Hero Right Profile Card -->
-          <div class="hero-visual">
-            <div class="avatar-card">
-              <div class="avatar-img-wrapper">
-                <img id="heroAvatarImg" src="assets/images/avatar.svg" alt="Avishi Srivastava Portrait" />
-                <div class="avatar-overlay-badge">
-                  <span class="status-dot"></span> Java · Python · DSA
-                </div>
-              </div>
-              <div class="avatar-meta">
-                <div>
-                  <div class="meta-title">Avishi Srivastava</div>
-                  <div class="meta-sub">VIT Vellore • AI &amp; ML</div>
-                </div>
-                <a href="#resume" class="btn-open-resume-quick">
-                  Photo Resume →
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -143,11 +145,11 @@
         <div class="section-header">
           <div class="section-label">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            Interactive Portal
+            Curated Index
           </div>
-          <h2 class="section-title">Where would you like to explore?</h2>
+          <h2 class="section-title">Institutional <span class="editorial-serif">Portals</span></h2>
           <p class="section-desc">
-            Direct access to honors, shipped production software, comprehensive credentials, and hiring channels.
+            Direct navigation to verified academic honors, production architecture, executive dossier, and formal inquiry channels.
           </p>
         </div>
 
@@ -156,16 +158,16 @@
           <a href="#achievements" class="hub-card achievements-hub">
             <div class="hub-top">
               <div class="hub-icon-wrapper">🏆</div>
-              <span class="hub-tag">8+ Honors</span>
+              <span class="hub-tag">Honors</span>
             </div>
             <div>
-              <h3 class="hub-title">Achievements</h3>
+              <h3 class="hub-title">Key Distinctions</h3>
               <p class="hub-description">
-                Global hackathon victories, cloud solutions certifications, and technical distinctions.
+                graVITas GenAI workshop certification (VIT &amp; HCLTech), hackathon honors, and 100/100 CS benchmarks.
               </p>
             </div>
             <div class="hub-arrow">
-              <span>View Milestones</span>
+              <span>View Distinctions</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </div>
           </a>
@@ -174,16 +176,16 @@
           <a href="#projects" class="hub-card projects-hub">
             <div class="hub-top">
               <div class="hub-icon-wrapper">🌱</div>
-              <span class="hub-tag">Featured Platform</span>
+              <span class="hub-tag">Featured Works</span>
             </div>
             <div>
-              <h3 class="hub-title">Projects Built</h3>
+              <h3 class="hub-title">Selected Works</h3>
               <p class="hub-description">
-                KhetiNex BioChain — Autonomous Agri-Tech &amp; APMC Mandi Arbitrage Exchange with live deal room.
+                StudyBuddy AI exam revision suite &amp; KhetiNex BioChain APMC Mandi arbitrage platform.
               </p>
             </div>
             <div class="hub-arrow">
-              <span>Inspect Platform</span>
+              <span>Inspect Systems</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </div>
           </a>
@@ -192,16 +194,16 @@
           <a href="#resume" class="hub-card resume-hub">
             <div class="hub-top">
               <div class="hub-icon-wrapper">📄</div>
-              <span class="hub-tag">Visual CV</span>
+              <span class="hub-tag">Official Record</span>
             </div>
             <div>
-              <h3 class="hub-title">Photo Resume</h3>
+              <h3 class="hub-title">Executive Dossier</h3>
               <p class="hub-description">
-                Interactive dossier with high-res portrait, career history timeline, skills grid, and 1-click PDF print.
+                Comprehensive curriculum vitae with high-res portrait, academic transcripts, and ATS-ready print format.
               </p>
             </div>
             <div class="hub-arrow">
-              <span>Inspect Resume</span>
+              <span>Open Dossier</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </div>
           </a>
@@ -210,16 +212,16 @@
           <a href="#contact" class="hub-card contact-hub">
             <div class="hub-top">
               <div class="hub-icon-wrapper">💼</div>
-              <span class="hub-tag">Recruiter Hub</span>
+              <span class="hub-tag">Inquiry Portal</span>
             </div>
             <div>
-              <h3 class="hub-title">Contact for Hiring</h3>
+              <h3 class="hub-title">Formal Inquiries</h3>
               <p class="hub-description">
-                Tailored inquiry portal for engineering leaders &amp; recruiters with immediate response SLA.
+                Dedicated correspondence gateway for engineering managers, recruiting teams, and leadership.
               </p>
             </div>
             <div class="hub-arrow">
-              <span>Connect / Hire</span>
+              <span>Initiate Contact</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </div>
           </a>
@@ -235,11 +237,11 @@
         <div class="section-header">
           <div class="section-label">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-            Recognitions &amp; Impact
+            Accreditation &amp; Impact
           </div>
-          <h2 class="section-title">Key Achievements &amp; Honors</h2>
+          <h2 class="section-title">Academic Distinctions &amp; <span class="editorial-serif">Honors</span></h2>
           <p class="section-desc">
-            Proven track record of engineering leadership, international hackathons, and verified technical credentials.
+            Competitive hackathon victories, perfect score board examinations, and verified credentials in computing fundamentals.
           </p>
         </div>
 
@@ -263,24 +265,25 @@
         <div class="section-header">
           <div class="section-label">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            Production Systems
+            Production Software
           </div>
-          <h2 class="section-title">Projects Built &amp; Shipped</h2>
+          <h2 class="section-title">Curated Systems &amp; <span class="editorial-serif">Selected Works</span></h2>
           <p class="section-desc">
-            Flagship autonomous agri-tech ecosystem spanning cross-mandi logistics arbitrage, real-time APMC price telemetry, and Web3 forward smart contracts.
+            Production full-stack engineering and intelligent architectures spanning AI study automation, cross-mandi logistics arbitrage, and modern web applications.
           </p>
         </div>
 
         <!-- Filter Pills & Search -->
         <div class="projects-filter-bar">
           <div class="filter-pills">
-            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn active" data-category="all">All Disciplines</button>
+            <button class="filter-btn" data-category="ai">AI Systems &amp; Ed-Tech</button>
             <button class="filter-btn" data-category="agritech">Web3 &amp; Agri-Tech</button>
           </div>
 
           <div class="search-box-wrapper">
             <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            <input type="text" id="projectSearchInput" class="search-input" placeholder="Search by name or tech stack (e.g. React, Web3)..." aria-label="Search projects" />
+            <input type="text" id="projectSearchInput" class="search-input" placeholder="Search architecture, stack (e.g. React, Web3)..." aria-label="Search projects" />
           </div>
         </div>
 
@@ -299,9 +302,9 @@
         <div class="section-header">
           <div class="section-label">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-            Official Photo Resume
+            Verified Record
           </div>
-          <h2 class="section-title">Photo Resume &amp; Academic Dossier</h2>
+          <h2 class="section-title">Executive Dossier &amp; <span class="editorial-serif">Academic Credentials</span></h2>
           <p class="section-desc">
             Verified resume document and comprehensive academic background for Avishi Srivastava (B.Tech CSE - AI &amp; ML, VIT Vellore).
           </p>
@@ -311,12 +314,12 @@
         <div class="resume-action-bar">
           <div class="resume-action-left">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Verified Candidate Document • Avishi Srivastava</span>
+            <span>Verified Candidate Dossier • Avishi Srivastava</span>
           </div>
           <div class="resume-action-right">
             <a href="assets/images/resume.jpg" download="Avishi_Srivastava_Resume.jpg" class="btn-download-resume" title="Download High-Resolution Resume Image">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              <span>Download Resume</span>
+              <span>Download Record</span>
             </a>
             <button class="btn-copy-link" onclick="openResumeModal()" title="View full-resolution resume sheet">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
@@ -328,7 +331,7 @@
             </button>
             <button class="btn-copy-link" id="btnCopyResumeLink" title="Copy section link">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
-              <span>Copy Link</span>
+              <span>Share Dossier</span>
             </button>
           </div>
         </div>
@@ -342,13 +345,13 @@
               <div class="resume-hover-overlay">
                 <span class="resume-zoom-badge">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-                  Click to Expand &amp; Zoom
+                  Click to Expand &amp; Inspect
                 </span>
               </div>
             </div>
             <div class="resume-doc-footer">
               <span style="font-size: 0.85rem; color: var(--text-muted);">
-                📄 <strong>Original Resume Sheet</strong> · VIT Vellore
+                📄 <strong>Institutional Credential Sheet</strong> · VIT Vellore
               </span>
               <a href="assets/images/resume.jpg" download="Avishi_Srivastava_Resume.jpg" class="btn-download-resume">
                 Download JPG ⬇
@@ -373,7 +376,7 @@
             <div style="margin-bottom: 28px;">
               <h3 class="resume-col-title">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                Professional Summary
+                Professional Thesis &amp; Summary
               </h3>
               <p id="resumeProfileSummary" style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.65;">
                 <!-- Populated by app.js -->
@@ -384,7 +387,7 @@
             <div style="margin-bottom: 28px;">
               <h3 class="resume-col-title">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-                Education
+                Academic Background
               </h3>
               <div id="resumeEducation">
                 <!-- Populated by app.js -->
@@ -395,7 +398,7 @@
             <div style="margin-bottom: 28px;">
               <h3 class="resume-col-title">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-                Achievements &amp; Honors
+                Distinctions &amp; Honors
               </h3>
               <div id="resumeAchievementsList">
                 <!-- Populated by app.js -->
@@ -406,7 +409,7 @@
             <div>
               <h3 class="resume-col-title">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                Skills &amp; Competencies
+                Technical Competencies
               </h3>
               <div class="skills-block-group" id="resumeSkillsGroup">
                 <!-- Populated by app.js -->
@@ -425,11 +428,11 @@
         <div class="section-header">
           <div class="section-label">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            Hiring Portal
+            Talent Acquisition &amp; Correspondence
           </div>
-          <h2 class="section-title">Contact for Hiring Opportunities</h2>
+          <h2 class="section-title">Formal Inquiries &amp; <span class="editorial-serif">Recruitment</span></h2>
           <p class="section-desc">
-            Directly connect with Avishi Srivastava for engineering roles, technical advisory, or freelance builds.
+            Direct institutional channel for software engineering roles, research opportunities, and technical partnerships.
           </p>
         </div>
 
@@ -449,7 +452,7 @@
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
                     </div>
                     <div>
-                      <div class="channel-name">Email Address</div>
+                      <div class="channel-name">Confidential Email</div>
                       <div class="channel-value" id="channelEmailVal">avishi.srivastava.dev@gmail.com</div>
                     </div>
                   </div>
@@ -465,8 +468,8 @@
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                     </div>
                     <div>
-                      <div class="channel-name">Direct Phone</div>
-                      <div class="channel-value" id="channelPhoneVal">+91 98765 43210</div>
+                      <div class="channel-name">Direct Line</div>
+                      <div class="channel-value" id="channelPhoneVal">+91 83186 76578</div>
                     </div>
                   </div>
                   <button class="btn-copy-val" onclick="copyChannelText('phone')" title="Copy phone number">
@@ -481,8 +484,8 @@
                       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
                     </div>
                     <div>
-                      <div class="channel-name">Base Location</div>
-                      <div class="channel-value" id="channelLocationVal">Bengaluru, India</div>
+                      <div class="channel-name">Primary Residence</div>
+                      <div class="channel-value" id="channelLocationVal">VIT Vellore, Tamil Nadu, India</div>
                     </div>
                   </div>
                   <button class="btn-copy-val" onclick="copyChannelText('location')" title="Copy location">
@@ -493,53 +496,52 @@
             </div>
 
             <!-- Quick Meeting Note -->
-            <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 16px; font-size: 0.85rem; color: var(--text-muted);">
-              💡 <strong>Prefer a quick discovery video call?</strong> Include your calendar link or convenient IST/UTC time slots in the message field.
+            <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 18px; font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+              💡 <strong>Prefer an executive discovery discussion?</strong> Kindly include your proposed calendar link or preferred IST / UTC meeting window in the inquiry message.
             </div>
           </div>
 
           <!-- Right: Interactive Hiring Form -->
           <div class="hiring-form-card">
-            <h3 class="form-title">Send a Hiring Inquiry</h3>
-            <p class="form-subtitle">Fill in the role details below to connect directly with Avishi.</p>
+            <h3 class="form-title">Submit a Formal Inquiry</h3>
+            <p class="form-subtitle">Direct institutional communication for engineering roles, technical advisory, or research engagements.</p>
 
             <form class="hiring-form" id="hireForm">
               <div class="form-row">
                 <div class="form-group">
-                  <label class="form-label" for="hireName">Your Full Name *</label>
+                  <label class="form-label" for="hireName">Full Name *</label>
                   <input type="text" id="hireName" class="form-input" placeholder="e.g. Sarah Jenkins" required />
                 </div>
                 <div class="form-group">
-                  <label class="form-label" for="hireEmail">Work Email Address *</label>
-                  <input type="email" id="hireEmail" class="form-input" placeholder="sarah@company.com" required />
+                  <label class="form-label" for="hireEmail">Corporate / Institutional Email *</label>
+                  <input type="email" id="hireEmail" class="form-input" placeholder="s.jenkins@organization.com" required />
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-group">
-                  <label class="form-label" for="hireCompany">Company / Organization</label>
-                  <input type="text" id="hireCompany" class="form-input" placeholder="e.g. Stripe, OpenAI, Tech Startup" />
+                  <label class="form-label" for="hireCompany">Organization / Institution</label>
+                  <input type="text" id="hireCompany" class="form-input" placeholder="e.g. Google, DeepMind, Stripe, Tech Venture" />
                 </div>
                 <div class="form-group">
-                  <label class="form-label" for="hireRoleType">Opportunity Type *</label>
+                  <label class="form-label" for="hireRoleType">Inquiry Classification *</label>
                   <select id="hireRoleType" class="form-select" required>
-                    <option value="Full-Time Software Engineer">Full-Time Software Engineer</option>
-                    <option value="Senior Frontend / React Architect">Senior Frontend / React Architect</option>
-                    <option value="Backend &amp; Distributed Systems">Backend &amp; Distributed Systems</option>
-                    <option value="AI / ML Application Development">AI / ML Application Development</option>
-                    <option value="Contract / Architecture Advisory">Contract / Architecture Advisory</option>
-                    <option value="Freelance MVP Build">Freelance MVP Build</option>
+                    <option value="Software Engineering Internship / Full-Time">Software Engineering Internship / Full-Time</option>
+                    <option value="AI / ML Systems Engineering">AI / ML Systems Engineering</option>
+                    <option value="Distributed Backend Architecture">Distributed Backend Architecture</option>
+                    <option value="Technical Advisory / Fellowship">Technical Advisory / Fellowship</option>
+                    <option value="Collaborative Research Initiative">Collaborative Research Initiative</option>
                   </select>
                 </div>
               </div>
 
               <div class="form-group">
-                <label class="form-label" for="hireMessage">Role Details, Tech Stack &amp; Expected Timeline *</label>
-                <textarea id="hireMessage" class="form-textarea" placeholder="Tell me about the role, team mission, compensation structure, or project requirements..." required></textarea>
+                <label class="form-label" for="hireMessage">Opportunity Overview &amp; Engagement Scope *</label>
+                <textarea id="hireMessage" class="form-textarea" placeholder="Detail the role specifications, engineering mission, compensation guidelines, or project expectations..." required></textarea>
               </div>
 
               <button type="submit" class="btn-submit-hire">
-                <span>Submit Hiring Inquiry</span>
+                <span>Dispatch Formal Inquiry</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
               </button>
             </form>
@@ -550,20 +552,21 @@
   </main>
 
   <!-- ==========================================================================
-       SITE FOOTER
+       SITE FOOTER (Formal & Refined)
        ========================================================================== -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-content">
         <div class="footer-meta">
-          © 2026 <strong>Avishi Srivastava</strong>. Crafted with clean modern web standards. Built for speed and impact.
+          © 2026 <strong>Avishi Srivastava</strong>. Neo-Glass &amp; Editorial Dark Architecture. Engineered for precision and performance.
         </div>
         <ul class="footer-nav">
           <li><a href="#intro">Intro</a></li>
+          <li><a href="#launchpad">Launchpad</a></li>
           <li><a href="#achievements">Achievements</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#projects">Projects Built</a></li>
           <li><a href="#resume">Photo Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">Contact &amp; Hire</a></li>
         </ul>
       </div>
     </div>

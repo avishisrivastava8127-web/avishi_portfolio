@@ -6,6 +6,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   initThemeToggle();
   initMobileNav();
+  initAmbientCursorTracker();
   renderHeroAndStats();
   renderAchievements();
   renderProjects();
@@ -315,16 +316,16 @@ window.openResumeModal = function() {
 
   contentEl.innerHTML = `
     <div style="text-align: center;">
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
         <div style="text-align: left;">
-          <h3 style="font-size: 1.3rem; font-weight: 800; margin-bottom: 2px;">Avishi Srivastava — Photo Resume</h3>
-          <p style="font-size: 0.85rem; color: var(--accent-cyan);">Vellore Institute of Technology, Vellore · AI &amp; ML</p>
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 2px;">Avishi Srivastava — Official Photo Resume</h3>
+          <p style="font-size: 0.86rem; color: var(--accent-cyan);">Vellore Institute of Technology, Vellore · AI &amp; ML Academic Dossier</p>
         </div>
-        <a href="assets/images/resume.jpg" download="Avishi_Srivastava_Resume.jpg" class="btn-primary" style="padding: 8px 16px; font-size: 0.85rem;">
+        <a href="assets/images/resume.jpg" download="Avishi_Srivastava_Resume.jpg" class="btn-primary" style="padding: 9px 18px; font-size: 0.86rem;">
           Download JPG ⬇
         </a>
       </div>
-      <div style="background: #ffffff; border-radius: var(--radius-md); overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);">
+      <div style="background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,0.6); border: 1px solid var(--border-glass);">
         <img src="assets/images/resume.jpg" alt="Avishi Srivastava Full Photo Resume" style="width: 100%; height: auto; display: block;" />
       </div>
     </div>
@@ -464,43 +465,43 @@ window.openProjectModal = function(projectId) {
   const backdrop = document.getElementById("modalBackdrop");
 
   contentEl.innerHTML = `
-    <div style="margin-bottom: 20px;">
+    <div style="margin-bottom: 24px;">
       <span class="project-category-tag" style="position: static; display: inline-block; margin-bottom: 12px;">${proj.categoryLabel}</span>
-      <h2 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 8px;">${proj.title}</h2>
-      <p style="color: var(--accent-cyan); font-weight: 600; font-size: 0.95rem; margin-bottom: 16px;">${proj.metrics}</p>
+      <h2 style="font-size: 1.8rem; font-weight: 700; margin-bottom: 8px;">${proj.title}</h2>
+      <p style="color: var(--accent-cyan); font-weight: 600; font-size: 0.95rem; font-family: var(--font-mono);">${proj.metrics}</p>
     </div>
 
-    <div style="border-radius: var(--radius-md); overflow: hidden; margin-bottom: 24px; border: 1px solid var(--border-subtle); background: #0f172a;">
+    <div style="border-radius: var(--radius-md); overflow: hidden; margin-bottom: 24px; border: 1px solid var(--border-glass); background: #0B0D11;">
       <img src="${proj.image}" alt="${proj.title}" style="width: 100%; height: auto; display: block;" />
     </div>
 
     <div style="margin-bottom: 24px;">
       <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 6px;">The Challenge &amp; Problem</h4>
-      <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; margin-bottom: 16px;">${proj.details.problem}</p>
+      <p style="color: var(--text-muted); font-size: 0.94rem; line-height: 1.65; margin-bottom: 18px;">${proj.details.problem}</p>
       
-      <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 6px;">Architecture &amp; Solution</h4>
-      <p style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.6; margin-bottom: 16px;">${proj.details.solution}</p>
+      <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 6px;">Architecture &amp; Engineered Solution</h4>
+      <p style="color: var(--text-muted); font-size: 0.94rem; line-height: 1.65; margin-bottom: 18px;">${proj.details.solution}</p>
 
-      <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 10px;">Key Technical Features</h4>
-      <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px;">
+      <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 10px;">Key Technical Highlights</h4>
+      <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 22px;">
         ${proj.details.keyFeatures.map(f => `
-          <li style="color: var(--text-muted); font-size: 0.9rem; padding-left: 20px; position: relative;">
+          <li style="color: var(--text-muted); font-size: 0.92rem; padding-left: 20px; position: relative; line-height: 1.6;">
             <span style="position: absolute; left: 0; color: var(--accent-cyan);">✦</span> ${f}
           </li>
         `).join("")}
       </ul>
 
-      <h4 style="font-size: 0.9rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase; margin-bottom: 8px;">Technologies Utilized</h4>
+      <h4 style="font-size: 0.8rem; font-weight: 700; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px;">Technologies Utilized</h4>
       <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px;">
         ${proj.tags.map(t => `<span class="tech-tag">${t}</span>`).join("")}
       </div>
     </div>
 
-    <div style="display: flex; gap: 14px; border-top: 1px solid var(--border-subtle); padding-top: 20px;">
-      <a href="${proj.liveUrl}" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">
-        Launch Live Demo ↗
+    <div style="display: flex; gap: 14px; border-top: 1px solid var(--border-glass-subtle); padding-top: 22px; flex-wrap: wrap;">
+      <a href="${proj.liveUrl}" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 10px 22px; font-size: 0.88rem;">
+        Launch Platform ↗
       </a>
-      <a href="${proj.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 10px 20px; font-size: 0.9rem;">
+      <a href="${proj.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="padding: 10px 22px; font-size: 0.88rem;">
         Browse Repository ↗
       </a>
     </div>
@@ -517,24 +518,37 @@ window.openCredentialModal = function(achId) {
   const backdrop = document.getElementById("modalBackdrop");
 
   contentEl.innerHTML = `
-    <div style="text-align: center; padding: 20px 0;">
-      <div style="font-size: 3.5rem; margin-bottom: 12px;">${ach.icon}</div>
-      <span class="ach-badge" style="margin-bottom: 12px; display: inline-block;">${ach.category}</span>
-      <h2 style="font-size: 1.7rem; font-weight: 800; margin-bottom: 8px;">${ach.title}</h2>
-      <p style="color: var(--accent-cyan); font-weight: 600; font-size: 1rem; margin-bottom: 16px;">${ach.organization} • Conferred ${ach.date}</p>
+    <div style="text-align: center; padding: 10px 0 20px;">
+      <div style="font-size: 3.2rem; margin-bottom: 12px;">${ach.icon}</div>
+      <span class="ach-badge" style="margin-bottom: 14px; display: inline-block;">${ach.category}</span>
+      <h2 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 6px;">${ach.title}</h2>
+      <p style="color: var(--accent-cyan); font-weight: 600; font-size: 0.95rem; margin-bottom: 20px;">${ach.organization} • Conferred ${ach.date}</p>
       
-      <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 20px; margin-bottom: 24px; text-align: left;">
-        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 12px;">${ach.description}</p>
-        <div style="border-top: 1px solid var(--border-subtle); padding-top: 12px; display: flex; justify-content: space-between; font-size: 0.85rem;">
+      ${ach.credentialImage ? `
+        <div style="border-radius: var(--radius-md); overflow: hidden; margin-bottom: 22px; border: 1px solid var(--border-glass); background: #0B0D11; box-shadow: var(--glass-shadow);">
+          <img src="${ach.credentialImage}" alt="${ach.title}" style="width: 100%; height: auto; display: block;" />
+        </div>
+      ` : ''}
+
+      <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-glass); border-radius: var(--radius-md); padding: 22px; margin-bottom: 24px; text-align: left;">
+        <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.65; margin-bottom: 14px;">${ach.description}</p>
+        <div style="border-top: 1px solid var(--border-glass-subtle); padding-top: 14px; display: flex; justify-content: space-between; font-size: 0.84rem; flex-wrap: wrap; gap: 8px;">
           <span style="color: var(--text-dim);">Credential ID: <strong style="color: var(--text-main); font-family: var(--font-mono);">${ach.credentialId}</strong></span>
           <span style="color: var(--accent-emerald); font-weight: 600;">${ach.metrics}</span>
         </div>
       </div>
 
-      <div style="display: flex; justify-content: center; gap: 14px;">
-        <a href="${ach.credentialUrl}" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 10px 24px; font-size: 0.9rem;">
-          Official Issuer Verification ↗
-        </a>
+      <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+        ${ach.credentialPdf ? `
+          <a href="${ach.credentialPdf}" download="Avishi_Srivastava_graVITas_2026_Certificate.pdf" class="btn-primary" style="padding: 10px 24px; font-size: 0.88rem;">
+            Download Official PDF ⬇
+          </a>
+        ` : ''}
+        ${ach.credentialUrl && ach.credentialUrl !== '#' ? `
+          <a href="${ach.credentialUrl}" target="_blank" rel="noopener noreferrer" class="${ach.credentialPdf ? 'btn-secondary' : 'btn-primary'}" style="padding: 10px 24px; font-size: 0.88rem;">
+            Inspect Document ↗
+          </a>
+        ` : ''}
       </div>
     </div>
   `;
@@ -597,4 +611,46 @@ function initScrollSpy() {
       }
     });
   });
+}
+
+/* ==========================================================================
+   AMBIENT CURSOR GLOW TRACKER
+   ========================================================================== */
+function initAmbientCursorTracker() {
+  const cursorGlow = document.getElementById("ambientCursorGlow");
+  if (!cursorGlow) return;
+
+  // Only activate on fine pointer devices (desktops and laptops)
+  if (window.matchMedia("(pointer: fine)").matches) {
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let currentX = mouseX;
+    let currentY = mouseY;
+    let hasMoved = false;
+
+    window.addEventListener("mousemove", (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      if (!hasMoved) {
+        hasMoved = true;
+        cursorGlow.classList.add("active");
+      }
+    }, { passive: true });
+
+    window.addEventListener("mouseleave", () => {
+      cursorGlow.classList.remove("active");
+    });
+
+    window.addEventListener("mouseenter", () => {
+      if (hasMoved) cursorGlow.classList.add("active");
+    });
+
+    function animateCursor() {
+      currentX += (mouseX - currentX) * 0.12;
+      currentY += (mouseY - currentY) * 0.12;
+      cursorGlow.style.transform = `translate3d(${currentX}px, ${currentY}px, 0)`;
+      requestAnimationFrame(animateCursor);
+    }
+    requestAnimationFrame(animateCursor);
+  }
 }

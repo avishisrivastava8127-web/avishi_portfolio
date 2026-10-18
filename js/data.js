@@ -29,6 +29,20 @@ const portfolioData = {
   // 🏆 ACHIEVEMENTS & MILESTONES
   achievements: [
     {
+      id: "ach-gravitas-genai",
+      title: "Full Stack Application Development with Generative AI — graVITas 2026",
+      category: "Workshop Certification",
+      organization: "Vellore Institute of Technology & HCLTech",
+      date: "September 18 – 20, 2026",
+      icon: "🤖",
+      description: "Successfully participated in the One-Day Hands-on Workshop on 'Full Stack Application Development with Generative AI', conducted during graVITas 2026 — the annual techno-management fest of Vellore Institute of Technology, Vellore, conducted in partnership with HCLTech.",
+      metrics: "Reg No: 26BAI0202 • Verified by VIT & HCLTech",
+      credentialUrl: "assets/documents/certificate-gravitas-2026.pdf",
+      credentialPdf: "assets/documents/certificate-gravitas-2026.pdf",
+      credentialImage: "assets/images/certificate-gravitas.svg",
+      credentialId: "VIT-GRAVITAS-26BAI0202"
+    },
+    {
       id: "ach-1",
       title: "Second Runner-Up — HackGrid Hackathon",
       category: "Hackathon",
@@ -80,6 +94,30 @@ const portfolioData = {
 
   // 💻 PROJECTS BUILT
   projects: [
+    {
+      id: "proj-studybuddy-ai",
+      title: "StudyBuddy AI — Real-Time Exam Revision, Adaptive Quiz & Streaming Doubt Tutor",
+      category: "ai",
+      categoryLabel: "AI Systems & Ed-Tech",
+      image: "assets/images/project-studybuddy.svg",
+      summary: "Full-stack AI study platform powered by Node.js, Express 5, React 19, and Google Gemini Flash Lite. Features multi-format lecture ingestion (PDF text extraction, Markdown, text), instant 1-minute revision sheets, interactive multiple-choice quizzes with explanations, and a real-time streaming doubt tutor.",
+      tags: ["React 19", "Node.js", "Express 5", "Google Gemini Flash", "Vite", "Server-Sent Streaming", "PDF Extraction", "Tailwind CSS"],
+      liveUrl: "https://45pxqhx1-5173.inc1.devtunnels.ms/",
+      githubUrl: "https://github.com/avishisrivastava8127-web/studybuddyy",
+      featured: true,
+      metrics: "Google Gemini Flash Lite · Streaming Tutor · PDF Ingest",
+      details: {
+        problem: "Students frequently struggle to revise massive volumes of unstructured lecture slides, handouts, and notes the night before examinations, lacking immediate feedback or dynamic clarification on complex topics.",
+        solution: "Architected StudyBuddy AI: an end-to-end intelligent study platform that ingests multi-page lecture PDFs, Markdown, and notes. Employs Gemini Flash Lite with structured schema enforcement to synthesize high-yield 1-minute revision sheets, generate adaptive interactive quizzes with real-time scoring, and provide a conversational streaming tutor grounded in course material.",
+        keyFeatures: [
+          "Multi-Format Notes Ingestion: Client-side PDF text extraction, Markdown and text file uploads, and clipboard templates",
+          "1-Minute Revision Synthesis: Algorithmic extraction of the central thesis, 5 high-yield bullet takeaways (<25 words), and must-remember vocabulary",
+          "Interactive Adaptive Quiz Engine: 5-question multiple-choice quizzes with strict JSON schema validation, instant scoring, and concept explanations",
+          "Real-Time Streaming Doubt Tutor: Multi-turn conversational chat with token-by-token streaming responses grounded strictly in the student's lecture notes",
+          "Session History Persistence: Localized session tracking enabling instant retrieval and review of past revision topics"
+        ]
+      }
+    },
     {
       id: "proj-khetinex-biochain",
       title: "KhetiNex BioChain — Autonomous Agri-Tech & APMC Mandi Arbitrage Exchange",
@@ -139,6 +177,13 @@ const portfolioData = {
     ],
 
     achievements: [
+      {
+        title: "Full Stack Development with Generative AI (graVITas 2026)",
+        points: [
+          "Completed hands-on technical workshop on Full Stack Application Development with Generative AI at graVITas 2026, VIT Vellore in partnership with HCLTech.",
+          "Applied generative AI models, LLM APIs, and full-stack integration frameworks."
+        ]
+      },
       {
         title: "Second Runner-Up — HackGrid Hackathon",
         points: [

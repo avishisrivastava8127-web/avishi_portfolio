@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 842 595.28" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap');
+      .cert-name {
+        font-family: 'Great Vibes', cursive;
+        font-size: 38px;
+        fill: #111111;
+        text-anchor: middle;
+      }
+      .cert-meta {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 13.5px;
+        font-weight: bold;
+        fill: #111111;
+        text-anchor: middle;
+      }
+      .cert-body {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 12px;
+        fill: #111111;
+        text-anchor: middle;
+      }
+      .cert-bold {
+        font-weight: bold;
+      }
+    </style>
+  </defs>
+
+  <!-- High-Res Certificate Template Background -->
+  <image href="certificate-gravitas.jpg" width="842" height="595.28" />
+
+  <!-- Dynamic Recipient Text Layer (Exact Match to Official Issuance) -->
+  <text x="421" y="309" class="cert-name">Avishi Srivastava</text>
+  <text x="421" y="338" class="cert-meta">{26BAI0202}</text>
+  <text x="421" y="362" class="cert-body">from Vellore Institute of Technology has participated in <tspan class="cert-bold">One-Day Hands-on Workshop on</tspan></text>
+  <text x="421" y="380" class="cert-body"><tspan class="cert-bold">Full Stack Application Development with Generative AI</tspan>, conducted during graVITas 2026</text>
+  <text x="421" y="398" class="cert-body">— the annual techno-management fest of Vellore Institute of Technology, Vellore.</text>
+</svg>
