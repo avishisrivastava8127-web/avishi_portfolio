@@ -26,8 +26,20 @@ const portfolioData = {
     ]
   },
 
-  // 🏆 ACHIEVEMENTS & MILESTONES
+  // 🏆 ACHIEVEMENTS & MILESTONES (Hackathon before Workshop & School Education)
   achievements: [
+    {
+      id: "ach-1",
+      title: "Second Runner-Up — HackGrid Hackathon",
+      category: "Hackathon",
+      organization: "HackGrid Hackathon Community",
+      date: "2026",
+      icon: "🥈",
+      description: "Secured second runner-up position in a competitive hackathon out of 53 teams. Collaborated with teammates to develop and present KhetiNex BioChain, an innovative technical solution for agricultural price arbitrage and smart contracts.",
+      metrics: "Rank: 2nd Runner-Up out of 53 Teams",
+      credentialUrl: "https://fantasticfive-hg-26.vercel.app/",
+      credentialId: "HACKGRID-2026-RUNNERUP"
+    },
     {
       id: "ach-gravitas-genai",
       title: "Full Stack Application Development with Generative AI — graVITas 2026",
@@ -41,18 +53,6 @@ const portfolioData = {
       credentialPdf: "assets/documents/certificate-gravitas-2026.pdf",
       credentialImage: "assets/images/certificate-gravitas.svg",
       credentialId: "VIT-GRAVITAS-26BAI0202"
-    },
-    {
-      id: "ach-1",
-      title: "Second Runner-Up — HackGrid Hackathon",
-      category: "Hackathon",
-      organization: "HackGrid Hackathon Community",
-      date: "2026",
-      icon: "🥈",
-      description: "Secured second runner-up position in a competitive hackathon out of 53 teams. Collaborated with teammates to develop and present KhetiNex BioChain, an innovative technical solution for agricultural price arbitrage and smart contracts.",
-      metrics: "Rank: 2nd Runner-Up out of 53 Teams",
-      credentialUrl: "https://fantasticfive-hg-26.vercel.app/",
-      credentialId: "HACKGRID-2026-RUNNERUP"
     },
     {
       id: "ach-2",
@@ -178,13 +178,6 @@ const portfolioData = {
 
     achievements: [
       {
-        title: "Full Stack Development with Generative AI (graVITas 2026)",
-        points: [
-          "Completed hands-on technical workshop on Full Stack Application Development with Generative AI at graVITas 2026, VIT Vellore in partnership with HCLTech.",
-          "Applied generative AI models, LLM APIs, and full-stack integration frameworks."
-        ]
-      },
-      {
         title: "Second Runner-Up — HackGrid Hackathon",
         points: [
           "Secured second runner-up position in a competitive hackathon.",
@@ -193,9 +186,10 @@ const portfolioData = {
         ]
       },
       {
-        title: "Debate Competitions",
+        title: "Full Stack Development with Generative AI (graVITas 2026)",
         points: [
-          "Participated in multiple debate competitions and won several events, showcasing strong public speaking, critical thinking and persuasive communication skills."
+          "Completed hands-on technical workshop on Full Stack Application Development with Generative AI at graVITas 2026, VIT Vellore in partnership with HCLTech.",
+          "Applied generative AI models, LLM APIs, and full-stack integration frameworks."
         ]
       },
       {
@@ -203,6 +197,12 @@ const portfolioData = {
         points: [
           "Scored 97.5% in Class XII (Computer Science – 100/100) and 95.8% in Class X.",
           "Consistent academic performance and strong conceptual understanding."
+        ]
+      },
+      {
+        title: "Debate Competitions",
+        points: [
+          "Participated in multiple debate competitions and won several events, showcasing strong public speaking, critical thinking and persuasive communication skills."
         ]
       }
     ],
