@@ -1,74 +1,183 @@
-# Avishi Srivastava — Interactive Portfolio Website
+# Avishi Srivastava — Editorial Magazine Lookbook & Bento Portfolio
 
-A sleek, responsive, and high-performance developer portfolio website engineered with modern web standards (HTML5, CSS3, modular JavaScript).
+[![Node.js](https://img.shields.io/badge/Node.js-18%2B-green.svg)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/Express-5.3-blue.svg)](https://expressjs.com/)
+[![License](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-black.svg)](https://github.com/avishisrivastava8127-web/avishi_portfolio)
 
----
+A modern, high-performance developer portfolio and technical dossier for **Avishi Srivastava** (B.Tech Computer Science & Engineering specializing in AI & ML at **VIT Vellore**).
 
-## 🌟 Key Features
-
-1. **Start Screen Intro & Launchpad**:
-   - Dynamic greeting, role overview, verified status badge, and immediate call-to-actions.
-   - Interactive Launchpad cards linking directly to **Achievements**, **Projects Built**, **Photo Resume**, and **Contact for Hiring**.
-
-2. **🏆 Achievements Showcase**:
-   - Impact metrics (Projects delivered, Hackathons won, Open source commits, System uptime).
-   - Hackathon victories, cloud solutions certifications (AWS & Google Cloud), and academic honors.
-   - Interactive **Verify Credential** modal dialogs.
-
-3. **💻 Projects Built**:
-   - 6 featured projects spanning Multi-modal AI Search, Cloud Observability, Headless E-Commerce, Real-Time CRDT Code Sync, FinTech Portfolio Engines, and DevOps Automation.
-   - Interactive filter pills (`All`, `AI & ML`, `Full-Stack`, `Frontend & UI`, `Cloud & DevOps`) and real-time live search.
-   - Deep-dive detail modals detailing problem statement, architectural solutions, and key technical highlights.
-
-4. **📄 Photo Resume (Visual CV Hub)**:
-   - High-resolution portrait avatar / photo card.
-   - Executive profile summary, career experience timeline, education, categorized technical skills, and certifications.
-   - **"Print / Save as PDF"**: Formatted `@media print` print-to-PDF stylesheet producing an ATS-friendly, clean resume document in 1-click.
-   - Copyable resume link.
-
-5. **💼 Contact for Hiring**:
-   - Purpose-built for recruiters, engineering leaders, and clients.
-   - Interactive inquiry form with opportunity type selection (`Full-Time`, `Contract`, `Advisory`, `Freelance MVP`), validation, and animated confirmation toasts.
-   - Direct contact channels (Email, Phone, Location) with 1-click copy-to-clipboard buttons.
-
-6. **🎨 Modern Aesthetics**:
-   - Glassmorphic tech theme with dark and light mode toggle (persisted in `localStorage`).
-   - Ambient background glow and grid.
-   - Fully responsive for mobile devices, tablets, and wide desktop displays.
+Engineered with an **Editorial Magazine Lookbook & Bento Grid** architecture, combining the high-fashion editorial aesthetics of a print lookbook with modern software engineering credibility and interactive capabilities.
 
 ---
 
-## 🚀 How to Run & Preview Locally
+## 📸 Design Architecture & Typographic Suite
 
-### Option 1: Instant Browser Preview (Zero Install)
-Simply double-click `index.html` in your file explorer to open it in your default web browser (Chrome, Edge, Firefox, Safari).
+The portfolio follows an architectural **Bento Grid** layout with fine hairline dividers, deep contrast, and structured breathing room. All free-hand/cursive script fonts have been eliminated in favor of clean, professional editorial typography:
 
-### Option 2: Local HTTP Server (Node.js)
-In this directory, run:
-```bash
-npx serve .
+| Typographic Role | Typeface | Style / Weight | Usage |
+| :--- | :--- | :--- | :--- |
+| **Monumental Covers & Titles** | `Bebas Neue` / `Anton` | Uppercase Condensed Bold | Large headers (`PORTFOLIO`, `WHO AM I`, `QUALIFICATIONS`, `MY WORK INCLUDES`, `CASE STUDY`, `TECHNICAL ARSENAL`) |
+| **Hero Accent Overlay** | `Instrument Serif` | `400 Italic` Serif | Classical high-fashion serif (`Avishi's`) overlaid across the cover |
+| **Editorial Headings & Metrics** | `Playfair Display` | `700 Bold / Italic` | Section subtitles, metric numbers, and credential titles |
+| **Interface & Body Typography** | `Plus Jakarta Sans` | `400 / 500 / 600` | Clean geometric body text, cards, and UI components |
+| **Code & Technical Metadata** | `JetBrains Mono` | `400 / 500` Monospace | Terminal snippet, status pills, and credential identifiers |
+
+---
+
+## 🌟 Key Sections & Experience
+
+### 1. 📰 Editorial Cover Hero (`#intro`)
+- Monumental **`PORTFOLIO`** typography with an overlaid **`Avishi's`** serif accent.
+- Real-time availability status capsule (`Open to Software Engineering & AI Internships`).
+- Engineering mission tagline and immediate call-to-actions.
+- Interactive engineer badge card and verified technical record chip.
+
+### 2. 👤 Who Am I (`#who-am-i`)
+- Concise personal thesis: AI/ML specialization, algorithmic foundation, and collaborative problem-solving.
+- **Top 3 Quick Stats**:
+  - **`Top 3`** — HackGrid Hackathon Runner-Up
+  - **`100/100`** — ISC Class XII Computer Science
+  - **`97.5%`** — Board Distinction
+- Ecosystem technology tags: `Python`, `Java`, `PyTorch`, `React 19`, `Node.js`, `Git`.
+- Framed Python class snippet card (`engineer.py`) with a terminal status badge (`● System Architect Ready`).
+
+### 3. 🎓 Qualifications & Honors (`#qualifications`)
+- **Verified Credential Preview Card**: Framed certificate showcase with a red `VERIFIED` ribbon tag, inspecting the **graVITas 2026 GenAI Application Development** masterclass in partnership with **HCLTech** at VIT Vellore.
+- **Prioritized Capsule Badges** (Hackathon first):
+  1. 🥈 **`HackGrid 2nd Runner-Up (53 Teams)`**
+  2. 🎓 **`graVITas '26 GenAI Masterclass`**
+  3. 💯 **`ISC Class XII CS — 100/100`**
+  4. 📚 **`CBSE Class X — 95.8% Overall`**
+  5. 🎙️ **`Inter-Collegiate Debate Honors`**
+- Bottom technology pill bar highlighting active proficiencies.
+
+### 4. 💻 My Work Includes (`#projects`)
+- Filterable project grid with instant category buttons (`All`, `AI / EdTech`, `Web3 / Agri`) and real-time live search.
+- **Featured Systems**:
+  - **StudyBuddy AI**: End-to-end intelligent study system with automated PDF notes ingestion, 1-minute revision synthesis, and streaming doubt tutor. Live at [studybuddyai-tdlp.onrender.com](https://studybuddyai-tdlp.onrender.com/).
+  - **KhetiNex BioChain**: HackGrid Hackathon second runner-up platform for agricultural price arbitrage and smart contracts. Live at [fantasticfive-hg-26.vercel.app](https://fantasticfive-hg-26.vercel.app/).
+  - **Cloud AI Tunnel Service**: Production tunnel integration live at [devtunnels.ms](https://45pxqhx1-5173.inc1.devtunnels.ms/).
+- Deep-dive interactive modal dialogs detailing problem statement, architectural solution, and tech stack.
+
+### 5. 🔬 Case Study Deep-Dive (`#case-study`)
+- Dedicated architectural breakdown of **StudyBuddy AI**.
+- Contextual narrative covering Challenge, Engineered Architecture, and Impact Metrics.
+- Framed desktop browser window mockup with direct buttons to inspect the live platform and source code.
+
+### 6. 📱 Technical Arsenal (`#arsenal`)
+- 4 vertical smartphone-aspect hardware cards featuring speaker notches, category indices, and hover lighting:
+  - `01 / AI & LLM Systems` — PyTorch, Gemini API, RAG, Prompt Engineering, NLP.
+  - `02 / Full-Stack Core` — Node.js, Express 5, React 19, RESTful APIs, WebSockets.
+  - `03 / Algorithmic Core` — Data Structures & Algorithms in Java, Python, and C++ (100/100 in CS).
+  - `04 / Cloud & DevOps` — Vercel, Render, Git/GitHub, Docker, Linux.
+
+### 7. 📄 Executive Dossier & Verified Resume (`#resume`)
+- High-resolution institutional credential sheet with fullscreen zoom inspection modal and direct JPG download.
+- Structured interactive dossier:
+  - **Distinctions & Hackathon Honors** (prioritized before academic background).
+  - **Academic Background** (VIT Vellore, ISC Class XII, CBSE Class X).
+  - **Categorized Technical Competencies** (Languages, Interests, Competencies, Problem Solving).
+- **1-Click ATS Print / Save as PDF**: Formatted print stylesheet providing a clean, one-page printable CV via `window.print()`.
+
+### 8. ✉️ Formal Inquiries & Contact (`#contact`)
+- Recruiter and hiring manager dispatch interface with role scope selection (`Full-Time`, `Internship`, `Research Collaboration`, `Technical Advisory`, `Freelance MVP`).
+- Full-stack REST API integration (`POST /api/contact`) with JSON file persistence, rate-limiting safeguards, and fallback storage.
+- Direct communication channels (Email, Phone, Location) with 1-click clipboard copy.
+
+---
+
+## 🧭 Uncrowded & Organized Navigation
+
+- **Streamlined 5-Section Navigation Bar**:
+  `About` • `Qualifications` • `Work` • `Dossier` • `Contact`
+- **Zero Text Wrapping**: Powered by `white-space: nowrap;` and `flex-shrink: 0;` so nav labels and the brand name never wrap or get truncated.
+- **Responsive Mobile Drawer**: Seamlessly collapses into a clean full-screen menu drawer below `960px`.
+- **Dynamic ScrollSpy**: Real-time position tracking that illuminates the current section indicator as the user scrolls.
+
+---
+
+## 📂 Project Directory Structure
+
+```plaintext
+PORTFOLIO/
+├── index.html              # Main HTML5 semantic structure & Bento grid
+├── server.js               # Node.js + Express 5 backend server & contact API
+├── package.json            # NPM dependencies & scripts (Express, CORS)
+├── README.md               # Technical documentation & project guide
+│
+├── css/
+│   └── style.css           # Design tokens, typography, bento grid, responsive queries
+│
+├── js/
+│   ├── data.js             # Centralized portfolio data (profile, projects, achievements, resume)
+│   └── app.js              # Interactivity (theme toggle, filtering, search, modals, scrollspy)
+│
+├── data/
+│   └── inquiries.json      # Persistent backend storage for received contact inquiries
+│
+└── assets/
+    └── images/             # Resume JPG, avatar image, certificate SVGs, project banners
 ```
-or:
-```bash
-npm start
-```
-Then visit `http://localhost:3000` (or the URL displayed in the terminal).
 
 ---
 
-## 🛠️ How to Customize Your Details
+## 🚀 Getting Started & Local Development
 
-All data is decoupled from HTML and neatly centralized in `js/data.js`:
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v16.0.0 or higher recommended)
+- Modern web browser (Chrome, Edge, Firefox, Safari)
 
-- **Change Personal Details & Contact Info**: Update `portfolioData.personal` in `js/data.js`.
-- **Add / Edit Projects**: Modify or add entries to `portfolioData.projects` in `js/data.js`.
-- **Add / Edit Achievements**: Modify or add entries to `portfolioData.achievements` in `js/data.js`.
-- **Update Photo / Avatar**:
-  - Replace `assets/images/avatar.svg` with your own photo (e.g. `assets/images/my-photo.jpg`), then update `avatar: "assets/images/my-photo.jpg"` in `js/data.js`.
+### Quick Start
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/avishisrivastava8127-web/avishi_portfolio.git
+   cd avishi_portfolio
+   ```
+
+2. **Install backend dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the local server:**
+   ```bash
+   npm start
+   ```
+
+4. **Access the portfolio:**
+   Open your browser and navigate to:
+   ```
+   http://localhost:5000
+   ```
+
+*(Alternatively, `index.html` can be opened directly in any browser for static viewing).*
 
 ---
 
-## 🌐 Deploy to Web (Zero Build Setup Required)
+## 🔌 Backend REST API Endpoints
 
-- **GitHub Pages**: Push this repository to GitHub, go to **Settings > Pages**, and select the `main` branch root folder.
-- **Vercel / Netlify**: Drag-and-drop the folder or import the GitHub repo; it deploys instantly with zero build step.
+The included `server.js` provides RESTful endpoints:
+
+| Method | Endpoint | Description |
+| :--- | :--- | :--- |
+| `GET` | `/api/health` | Health check endpoint returning server status, uptime, and timestamp |
+| `GET` | `/api/portfolio` | Returns the complete decoupled portfolio JSON schema from `js/data.js` |
+| `POST` | `/api/contact` | Submits a formal inquiry; persists to `data/inquiries.json` |
+
+---
+
+## 🌐 Deployment
+
+The repository is built with standard web technologies and is ready for 1-click deployment:
+
+- **Render / Railway / Heroku**: Deploys the Node.js/Express application seamlessly using `npm start`.
+- **Vercel / Netlify / GitHub Pages**: Static frontend files (`index.html`, `css/`, `js/`, `assets/`) deploy out-of-the-box with automatic client-side fallback for form submissions.
+
+---
+
+## 📄 License & Credits
+
+- Designed and engineered for **Avishi Srivastava**.
+- Open source under the **MIT License**.
