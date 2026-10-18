@@ -79,8 +79,8 @@ function renderHeroAndStats() {
   const avatarImg = document.getElementById("heroAvatarImg");
 
   if (nameEl) nameEl.textContent = data.name;
-  if (roleEl) roleEl.textContent = data.role;
-  if (descEl) descEl.textContent = data.summary;
+  if (roleEl) roleEl.textContent = "AI & ML Engineer";
+  if (descEl) descEl.textContent = data.tagline || data.summary;
   if (statusEl) statusEl.textContent = data.statusBadge;
   if (avatarImg) avatarImg.src = data.avatar;
 
