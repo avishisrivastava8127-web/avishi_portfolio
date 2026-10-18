@@ -102,7 +102,7 @@ const portfolioData = {
       image: "assets/images/project-studybuddy.svg",
       summary: "Full-stack AI study platform powered by Node.js, Express 5, React 19, and Google Gemini Flash Lite. Features multi-format lecture ingestion (PDF text extraction, Markdown, text), instant 1-minute revision sheets, interactive multiple-choice quizzes with explanations, and a real-time streaming doubt tutor.",
       tags: ["React 19", "Node.js", "Express 5", "Google Gemini Flash", "Vite", "Server-Sent Streaming", "PDF Extraction", "Tailwind CSS"],
-      liveUrl: "https://45pxqhx1-5173.inc1.devtunnels.ms/",
+      liveUrl: "https://studybuddyai-tdlp.onrender.com/",
       githubUrl: "https://github.com/avishisrivastava8127-web/studybuddyy",
       featured: true,
       metrics: "Google Gemini Flash Lite · Streaming Tutor · PDF Ingest",
