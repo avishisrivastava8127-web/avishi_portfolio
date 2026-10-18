@@ -589,24 +589,32 @@ function showToast(message) {
    SCROLL SPY FOR NAVIGATION
    ========================================================================== */
 function initScrollSpy() {
-  const sections = document.querySelectorAll("section[id]");
+  const targetIds = ["who-am-i", "qualifications", "projects", "resume", "contact"];
   const navLinks = document.querySelectorAll(".nav-links a");
 
   window.addEventListener("scroll", () => {
-    let currentId = "";
-    const scrollPos = window.scrollY + 120;
+    let currentId = "who-am-i";
+    const scrollPos = window.scrollY + 180;
 
-    sections.forEach(section => {
-      const top = section.offsetTop;
-      const height = section.offsetHeight;
-      if (scrollPos >= top && scrollPos < top + height) {
-        currentId = section.getAttribute("id");
+    targetIds.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        const top = el.getBoundingClientRect().top + window.scrollY;
+        if (scrollPos >= top) {
+          currentId = id;
+        }
       }
     });
 
+    // If near bottom of page, activate contact
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 80) {
+      currentId = "contact";
+    }
+
     navLinks.forEach(link => {
       link.classList.remove("active");
-      if (link.getAttribute("href") === `#${currentId}`) {
+      const href = link.getAttribute("href");
+      if (href === `#${currentId}`) {
         link.classList.add("active");
       }
     });
