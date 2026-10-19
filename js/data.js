@@ -17,12 +17,12 @@ const portfolioData = {
     phone: "8318676578",
     github: "https://github.com/avishisrivastava8127-web",
     projectUrl: "https://fantasticfive-hg-26.vercel.app/",
-    summary: "First-year B.Tech CSE student at VIT Vellore, specialising in Artificial Intelligence and Machine Learning. Passionate about software development, algorithmic problem-solving, and technology. Actively building strong skills in Java, Python, and Data Structures & Algorithms (DSA) while maintaining solid conceptual fundamentals. Eager to contribute to innovative engineering teams with strengths in public speaking, critical thinking, team management, and collaborative execution.",
+    summary: "B.Tech CSE student specializing in AI & ML at VIT Vellore, seeking Software Engineering and AI internships. High-velocity learner with disciplined foundations in Java, Python, Data Structures & Algorithms (DSA), and modern web platforms. Proven interpersonal communicator, public speaker, and collaborative contributor eager to create tangible impact on engineering teams.",
     stats: [
       { label: "Core Languages", value: "Java & Python" },
-      { label: "Focus Areas", value: "DSA & AI/ML" },
-      { label: "Class XII CS", value: "100 / 100" },
-      { label: "Class XII Overall", value: "97.5%" }
+      { label: "Technical Focus", value: "DSA & AI/ML" },
+      { label: "Learning Agility", value: "Fast Ramp-Up" },
+      { label: "Team Competencies", value: "Collaborative & Coachable" }
     ]
   },
 
