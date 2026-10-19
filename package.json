@@ -4,7 +4,8 @@
   "description": "High-performance interactive portfolio website for Avishi Srivastava",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "test": "node -c js/data.js js/app.js server.js api/index.js"
   },
   "keywords": [
     "portfolio",
