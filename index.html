@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Avishi Srivastava — Full-Stack Software Engineer & AI Systems Developer. Explore achievements, projects built, photo resume, and contact for hiring opportunities.">
+  <meta name="keywords" content="Avishi Srivastava, Portfolio, Software Engineer, Full Stack Developer, React, Node.js, AI, Machine Learning, Resume">
+  <meta name="author" content="Avishi Srivastava">
+  <title>Avishi Srivastava | Editorial Lookbook &amp; Engineering Portfolio</title>
+
+  <!-- Google Fonts Preconnect & Editorial Font Suite -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+  <!-- Ambient Interactive Background Elements (Warm Taupe Atmosphere) -->
+  <div class="ambient-bg" id="ambientBg">
+    <div class="ambient-glow glow-indigo"></div>
+    <div class="ambient-glow glow-teal"></div>
+    <div class="ambient-glow glow-rose"></div>
+    <div class="ambient-glow glow-violet"></div>
+    <div class="ambient-cursor-glow" id="ambientCursorGlow"></div>
+  </div>
+  <div class="ambient-grid"></div>
+  <div class="ambient-dots"></div>
+  <div class="ambient-sparkles" aria-hidden="true">
+    <span class="sparkle sparkle-1">✦</span>
+    <span class="sparkle sparkle-2">✧</span>
+    <span class="sparkle sparkle-3">✦</span>
+    <span class="sparkle sparkle-4">✧</span>
+    <span class="sparkle sparkle-5">✦</span>
+    <span class="sparkle sparkle-6">✧</span>
+    <span class="sparkle sparkle-7">✦</span>
+    <span class="sparkle sparkle-8">✧</span>
+  </div>
+
+  <!-- ==========================================================================
+       SITE HEADER / NAVBAR (Floating Minimalist Editorial Nav)
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-wrapper">
+        <a href="#intro" class="brand-logo" aria-label="Home">
+          <div class="brand-icon">AS</div>
+          <span class="brand-text">Avishi <span class="brand-sub">Srivastava</span></span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#who-am-i" class="active">About</a></li>
+          <li><a href="#qualifications">Qualifications</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#resume">Dossier</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle dark/light theme" title="Toggle Theme">
+            <!-- Icon populated by app.js -->
+          </button>
+          <a href="#contact" class="btn-hire-nav">
+            <span>Hire Me</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+            ☰
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO COVER SECTION (Editorial Magazine Lookbook Header)
+         ========================================================================== -->
+    <section class="hero-section" id="intro">
+      <div class="container">
+        <div class="hero-cover-wrapper">
+          <!-- Top Row: Status Capsule & Eyebrow Category -->
+          <div class="hero-cover-top">
+            <div class="badge-status">
+              <span class="status-dot"></span>
+              <span id="heroStatusText">Open to Software Engineering &amp; AI Internships</span>
+            </div>
+            <div class="hero-top-category">AI &amp; SOFTWARE SYSTEMS</div>
+          </div>
+
+          <!-- Monumental Headline with Editorial Italic Accent -->
+          <div class="hero-cover-title-group">
+            <span class="hero-signature-overlay">Avishi's</span>
+            <h1 class="hero-monumental-title">PORTFOLIO</h1>
+          </div>
+
+          <!-- Bottom Row: Tagline Blurb, CTAs, Identity Bento Card & Socials -->
+          <div class="hero-cover-bottom">
+            <div class="hero-blurb-col">
+              <p class="hero-tagline-blurb" id="heroDesc">
+                Building intelligent solutions with AI, creative problem-solving, and a passion for turning ideas into real-world impact.
+              </p>
+              <div class="hero-cta-buttons">
+                <a href="#projects" class="btn-primary">
+                  <span>Explore My Work</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+                <a href="#resume" class="btn-secondary">
+                  <span>Executive Dossier</span>
+                </a>
+                <a href="#contact" class="btn-secondary">
+                  <span>Contact Me</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right: Editorial Identity Bento Card (Replacing central cutout with chic identity capsule) -->
+            <div class="hero-identity-bento">
+              <div class="identity-card-header">
+                <span class="identity-pill">VIT Vellore</span>
+                <span class="identity-role" id="heroRole">AI &amp; ML Engineer</span>
+              </div>
+              <div class="identity-name-block">
+                <h3 class="identity-name" id="heroName">Avishi Srivastava</h3>
+                <p class="identity-degree">B.Tech Computer Science (AI &amp; ML)</p>
+              </div>
+              <div class="identity-chips">
+                <span class="identity-chip">⚡ Rapid Learner</span>
+                <span class="identity-chip">🧠 DSA &amp; Problem Solving</span>
+                <span class="identity-chip">🤝 Agile Collaborator</span>
+              </div>
+              <div class="identity-badge-row">
+                <span class="identity-badge-tag">✦ Intern Candidate Ready</span>
+              </div>
+            </div>
+
+            <!-- Social Media Icon Pills (Bottom Right) -->
+            <div class="hero-social-bar">
+              <a href="https://github.com/avishisrivastava8127-web" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+              <a href="https://studybuddyai-tdlp.onrender.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="StudyBuddy AI Platform">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </a>
+              <a href="https://fantasticfive-hg-26.vercel.app/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="KhetiNex BioChain Platform">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+              </a>
+              <a href="mailto:avishisrivastava8127@gmail.com" class="social-icon-btn" title="Send Direct Correspondence">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         BENTO ROW 1: WHO AM I & QUALIFICATIONS
+         ========================================================================== -->
+    <section class="bento-row-section" id="who-am-i">
+      <div class="container">
+        <div class="bento-grid-2col">
+          <!-- Left: WHO AM I -->
+          <div class="bento-card bento-who-card">
+            <div class="bento-card-header">
+              <h2 class="bento-title">WHO AM I</h2>
+            </div>
+            <div class="bento-who-content">
+              <p class="bento-lead-text">
+                I'm <strong>Avishi Srivastava</strong>, a B.Tech Computer Science student specializing in Artificial Intelligence &amp; Machine Learning at <strong>VIT Vellore</strong>.
+              </p>
+              <p class="bento-sub-text">
+                A high-velocity learner and proactive engineering intern candidate. Proficient in Java, Python, and Data Structures &amp; Algorithms (DSA) with a disciplined approach to clean code, systematic problem-solving, coachable collaboration, and articulate technical communication.
+              </p>
+              
+              <!-- 3 Quick Intern Value Pillars (Skills & Qualities) -->
+              <div class="bento-stat-strip">
+                <div class="bento-stat-box">
+                  <span class="bento-stat-num">Fast</span>
+                  <span class="bento-stat-label">Learning Agility</span>
+                </div>
+                <div class="bento-stat-box">
+                  <span class="bento-stat-num">Rigor</span>
+                  <span class="bento-stat-label">DSA &amp; Clean Code</span>
+                </div>
+                <div class="bento-stat-box">
+                  <span class="bento-stat-num">Agile</span>
+                  <span class="bento-stat-label">Teamwork &amp; Ownership</span>
+                </div>
+              </div>
+
+              <!-- Editorial Code Snippet: Full Code of class AvishiIntern -->
+              <div class="bento-who-badge-wrapper">
+                <div class="editorial-code-box">
+                  <div class="code-box-header">
+                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    <span class="code-filename">intern.py</span>
+                  </div>
+                  <pre class="code-pre"><code><span class="ckw">class</span> <span class="ccls">AvishiIntern</span>:
+    mindset = <span class="cstr">"High Coachability"</span>
+    core_stack = [<span class="cstr">"Java"</span>, <span class="cstr">"Python"</span>, <span class="cstr">"DSA"</span>]
+    strengths = [<span class="cstr">"Fast Ramp-Up"</span>, <span class="cstr">"Teamwork"</span>]
+    ready_to_contribute = <span class="cbl">True</span></code></pre>
+                  <div class="code-terminal-footer">
+                    <span class="code-status-pill">● Ready to Contribute from Day 1</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Ecosystem Brands / Logos Bar -->
+              <div class="bento-brands-row">
+                <span class="brand-chip">Python</span>
+                <span class="brand-chip">Java</span>
+                <span class="brand-chip">DSA Problem Solving</span>
+                <span class="brand-chip">React 19</span>
+                <span class="brand-chip">Node.js</span>
+                <span class="brand-chip">Git Workflow</span>
+                <span class="brand-chip">Public Speaking</span>
+                <span class="brand-chip">Rapid Ramp-Up</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: QUALIFICATIONS -->
+          <div class="bento-card bento-qual-card" id="qualifications">
+            <div class="bento-card-header">
+              <h2 class="bento-title">QUALIFICATIONS</h2>
+            </div>
+            
+            <div class="qual-content-split">
+              <!-- Left: Certificate Preview Card with Diploma Badge & Red Ribbon -->
+              <div class="cert-preview-card" onclick="window.open('assets/documents/certificate-gravitas-2026.pdf', '_blank')" title="Click to view &amp; verify official certificate">
+                <div class="cert-ribbon-tag">VERIFIED</div>
+                <div class="cert-card-icon">🎓</div>
+                <div class="cert-card-title">graVITas 2026</div>
+                <div class="cert-card-sub">Full Stack &amp; Generative AI</div>
+                <div class="cert-card-org">VIT Vellore • HCLTech</div>
+                <a href="assets/documents/certificate-gravitas-2026.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert-inspect" onclick="event.stopPropagation()">
+                  Inspect Certificate ↗
+                </a>
+              </div>
+
+              <!-- Right: Interactive Redirect Capsule Buttons -->
+              <div class="qual-capsules-list">
+                <a href="https://fantasticfive-hg-26.vercel.app/" target="_blank" rel="noopener noreferrer" class="editorial-white-pill qual-btn-link" title="Launch HackGrid 2nd Runner-Up Live App">
+                  <span>HackGrid 2nd Runner-Up (53 Teams)</span>
+                  <span class="pill-arrow-icon">↗</span>
+                </a>
+                <a href="assets/documents/certificate-gravitas-2026.pdf" target="_blank" rel="noopener noreferrer" class="editorial-white-pill qual-btn-link" title="View Official graVITas 2026 GenAI Certificate (PDF)">
+                  <span>graVITas '26 GenAI Masterclass</span>
+                  <span class="pill-arrow-icon">↗</span>
+                </a>
+                <a href="#resume" class="editorial-white-pill qual-btn-link" title="View Class X &amp; XII Official Academic Records">
+                  <span>Class X &amp; XII Distinctions (100/100 CS • 95.8%)</span>
+                  <span class="pill-arrow-icon">↓</span>
+                </a>
+                <a href="#resume" class="editorial-white-pill qual-btn-link" title="View Debate Competitions Record">
+                  <span>Inter-Collegiate Debate Honors</span>
+                  <span class="pill-arrow-icon">↓</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Bottom Tool Icons Bar -->
+            <div class="qual-tools-footer">
+              <span class="tool-icon-pill" title="Python 3.x">🐍 Python</span>
+              <span class="tool-icon-pill" title="Java SE">☕ Java</span>
+              <span class="tool-icon-pill" title="React 19">⚛️ React 19</span>
+              <span class="tool-icon-pill" title="PyTorch">🔥 PyTorch</span>
+              <span class="tool-icon-pill" title="Node.js &amp; Express">🟢 Node.js</span>
+              <span class="tool-icon-pill" title="Git Version Control">🐙 Git</span>
+              <span class="tool-icon-pill" title="Cloud (Vercel &amp; Render)">🚀 Cloud</span>
+            </div>
+
+            <!-- Hidden hooks for app.js backwards-compatibility -->
+            <div id="metricsStrip" style="display:none;"></div>
+            <div id="achievementsGrid" style="display:none;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         BENTO ROW 2: FEATURED ENGINEERING PROJECTS (Side by Side)
+         ========================================================================== -->
+    <section class="bento-full-section" id="projects">
+      <div class="container">
+        <div class="bento-card bento-work-card">
+          <div class="bento-card-header bento-work-header">
+            <div>
+              <h2 class="bento-title">MY WORK</h2>
+              <p class="projects-sub-description">
+                Featured engineering systems integrating generative AI, algorithmic optimization, and modern full-stack architectures.
+              </p>
+            </div>
+            
+            <!-- Filter Pills & Search -->
+            <div class="work-filter-controls">
+              <div class="filter-pills-mini">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="ai">AI / EdTech</button>
+                <button class="filter-btn" data-category="agritech">Web3 / Agri</button>
+              </div>
+              <div class="work-search-compact">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" id="projectSearchInput" class="search-input-bento" placeholder="Filter projects (e.g. Gemini, React)..." aria-label="Search projects" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Dynamic Projects Grid (Both projects side by side!) -->
+          <div class="projects-bento-grid" id="projectsGrid">
+            <!-- Populated by app.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         BENTO ROW 3: TECHNICAL ARSENAL (Translating VIDEOGRAPHY in Reference)
+         ========================================================================== -->
+    <section class="bento-full-section" id="arsenal">
+      <div class="container">
+        <div class="bento-card bento-arsenal-card">
+          <div class="bento-card-header bento-arsenal-header">
+            <div>
+              <h2 class="bento-title">TECHNICAL ARSENAL</h2>
+              <p class="arsenal-sub-description">
+                End-to-end technical engineering competencies spanning intelligent systems, distributed architectures, algorithmic problem-solving, and cloud infrastructure.
+              </p>
+            </div>
+          </div>
+
+          <!-- 4 Tall Vertical Rounded Phone-Aspect Cards -->
+          <div class="arsenal-cards-grid">
+            <!-- Card 1 -->
+            <div class="arsenal-phone-card">
+              <div class="phone-notch"></div>
+              <div class="phone-card-body">
+                <div class="phone-card-icon">🤖</div>
+                <h3 class="phone-card-title">AI &amp; LLM Systems</h3>
+                <p class="phone-card-desc">Google Gemini Flash Lite, RAG architectures, prompt engineering, structured JSON schema validation, and intelligent search.</p>
+                <div class="phone-card-chips">
+                  <span>Gemini Flash</span>
+                  <span>RAG</span>
+                  <span>PyTorch</span>
+                  <span>LangChain</span>
+                </div>
+              </div>
+              <div class="phone-card-footer">01 / ARTIFICIAL INTELLIGENCE</div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="arsenal-phone-card">
+              <div class="phone-notch"></div>
+              <div class="phone-card-body">
+                <div class="phone-card-icon">⚡</div>
+                <h3 class="phone-card-title">Full-Stack Core</h3>
+                <p class="phone-card-desc">Node.js, Express 5, React 19, RESTful APIs, Server-Sent Events (SSE), WebSockets, and modern responsive UI architectures.</p>
+                <div class="phone-card-chips">
+                  <span>React 19</span>
+                  <span>Node.js</span>
+                  <span>Express 5</span>
+                  <span>Tailwind</span>
+                </div>
+              </div>
+              <div class="phone-card-footer">02 / FULL-STACK PLATFORMS</div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="arsenal-phone-card">
+              <div class="phone-notch"></div>
+              <div class="phone-card-body">
+                <div class="phone-card-icon">📐</div>
+                <h3 class="phone-card-title">Algorithmic Core</h3>
+                <p class="phone-card-desc">Rigorous Data Structures &amp; Algorithms in Java, Python, and C++ with clean computational complexity and asymptotic optimization.</p>
+                <div class="phone-card-chips">
+                  <span>Java</span>
+                  <span>Python</span>
+                  <span>DSA</span>
+                  <span>100/100 CS</span>
+                </div>
+              </div>
+              <div class="phone-card-footer">03 / ALGORITHMIC FOUNDATIONS</div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="arsenal-phone-card">
+              <div class="phone-notch"></div>
+              <div class="phone-card-body">
+                <div class="phone-card-icon">☁️</div>
+                <h3 class="phone-card-title">Cloud &amp; DevOps</h3>
+                <p class="phone-card-desc">Production deployment across Vercel and Render, Git version control, continuous integration, Docker workflows, and Linux.</p>
+                <div class="phone-card-chips">
+                  <span>Git/GitHub</span>
+                  <span>Vercel</span>
+                  <span>Render</span>
+                  <span>Docker</span>
+                </div>
+              </div>
+              <div class="phone-card-footer">04 / DISTRIBUTED CLOUD</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         BENTO ROW 4: EXECUTIVE DOSSIER & RESUME
+         ========================================================================== -->
+    <section class="resume-section" id="resume">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Verified Record
+          </div>
+          <h2 class="section-title">Executive Dossier &amp; <span class="editorial-serif">Academic Credentials</span></h2>
+          <p class="section-desc">
+            Verified resume document and comprehensive academic background for Avishi Srivastava (B.Tech CSE - AI &amp; ML, VIT Vellore).
+          </p>
+        </div>
+
+        <!-- Action Bar -->
+        <div class="resume-action-bar">
+          <div class="resume-action-left">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Verified Candidate Dossier • Avishi Srivastava</span>
+          </div>
+          <div class="resume-action-right">
+            <a href="assets/images/resume.jpg" download="Avishi_Srivastava_Resume.jpg" class="btn-download-resume" title="Download High-Resolution Resume Image">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Download Record</span>
+            </a>
+            <button class="btn-copy-link" onclick="openResumeModal()" title="View full-resolution resume sheet">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+              <span>Fullscreen Zoom</span>
+            </button>
+            <button class="btn-print" id="btnPrintResume" title="Print clean ATS-friendly resume">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+              <span>Print / PDF</span>
+            </button>
+            <button class="btn-copy-link" id="btnCopyResumeLink" title="Copy section link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+              <span>Share Dossier</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Resume Showcase Grid -->
+        <div class="resume-showcase-grid">
+          <!-- Left: Official Photo Resume Document -->
+          <div class="resume-document-card">
+            <div class="resume-document-wrapper" onclick="openResumeModal()" title="Click to view full size">
+              <img id="resumePhoto" src="assets/images/resume.jpg" alt="Avishi Srivastava Official Photo Resume" class="resume-document-img" />
+              <div class="resume-hover-overlay">
+                <span class="resume-zoom-badge">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  Click to Expand &amp; Inspect
+                </span>
+              </div>
+            </div>
+            <div class="resume-doc-footer">
+              <span style="font-size: 0.85rem; color: var(--text-muted);">
+                📄 <strong>Institutional Credential Sheet</strong> · VIT Vellore
+              </span>
+              <a href="assets/images/resume.jpg" download="Avishi_Srivastava_Resume.jpg" class="btn-download-resume">
+                Download JPG ⬇
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Structured Interactive Dossier -->
+          <div class="resume-dossier" id="resumeDossier">
+            <!-- Header Meta -->
+            <div style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 20px; margin-bottom: 24px;">
+              <h2 id="resumeTitle" style="font-size: 1.8rem; font-weight: 800; margin-bottom: 4px;">Avishi Srivastava</h2>
+              <div id="resumeSubtitle" style="font-size: 1rem; color: var(--accent-cyan); font-weight: 600; margin-bottom: 8px;">
+                B.Tech in Computer Science and Engineering (AI &amp; ML) · VIT Vellore
+              </div>
+              <p id="resumeContactLine" style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.5;">
+                avishisrivastava8127@gmail.com • 8318676578 • github.com/avishisrivastava8127-web
+              </p>
+            </div>
+
+            <!-- Professional Summary -->
+            <div style="margin-bottom: 28px;">
+              <h3 class="resume-col-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Professional Thesis &amp; Summary
+              </h3>
+              <p id="resumeProfileSummary" style="color: var(--text-muted); font-size: 0.92rem; line-height: 1.65;">
+                <!-- Populated by app.js -->
+              </p>
+            </div>
+
+            <!-- Achievements & Hackathon (Prioritized before School Education) -->
+            <div style="margin-bottom: 28px;">
+              <h3 class="resume-col-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                Distinctions &amp; Hackathon Honors
+              </h3>
+              <div id="resumeAchievementsList">
+                <!-- Populated by app.js -->
+              </div>
+            </div>
+
+            <!-- Education -->
+            <div style="margin-bottom: 28px;">
+              <h3 class="resume-col-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                Academic Background
+              </h3>
+              <div id="resumeEducation">
+                <!-- Populated by app.js -->
+              </div>
+            </div>
+
+            <!-- Technical Skills & Core Competencies -->
+            <div>
+              <h3 class="resume-col-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                Technical Competencies
+              </h3>
+              <div class="skills-block-group" id="resumeSkillsGroup">
+                <!-- Populated by app.js -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         BENTO ROW 5: CONTACT FOR HIRING & INQUIRIES (Translating RATE CARD / CONTACT)
+         ========================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            Talent Acquisition &amp; Correspondence
+          </div>
+          <h2 class="section-title">Formal Inquiries &amp; <span class="editorial-serif">Recruitment</span></h2>
+          <p class="section-desc">
+            Direct institutional channel for software engineering roles, research opportunities, and technical partnerships.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Channels & Status -->
+          <div class="contact-info-card">
+            <div>
+              <div class="hiring-status-box" id="hiringStatusSummary">
+                <!-- Populated by app.js -->
+              </div>
+
+              <div class="contact-channels">
+                <!-- Email -->
+                <div class="contact-channel-item">
+                  <div class="channel-left">
+                    <div class="channel-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </div>
+                    <div>
+                      <div class="channel-name">Confidential Email</div>
+                      <div class="channel-value" id="channelEmailVal">avishi.srivastava.dev@gmail.com</div>
+                    </div>
+                  </div>
+                  <button class="btn-copy-val" onclick="copyChannelText('email')" title="Copy email address">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                  </button>
+                </div>
+
+                <!-- Phone -->
+                <div class="contact-channel-item">
+                  <div class="channel-left">
+                    <div class="channel-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <div>
+                      <div class="channel-name">Direct Line</div>
+                      <div class="channel-value" id="channelPhoneVal">+91 83186 76578</div>
+                    </div>
+                  </div>
+                  <button class="btn-copy-val" onclick="copyChannelText('phone')" title="Copy phone number">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                  </button>
+                </div>
+
+                <!-- Location -->
+                <div class="contact-channel-item">
+                  <div class="channel-left">
+                    <div class="channel-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div>
+                      <div class="channel-name">Primary Residence</div>
+                      <div class="channel-value" id="channelLocationVal">VIT Vellore, Tamil Nadu, India</div>
+                    </div>
+                  </div>
+                  <button class="btn-copy-val" onclick="copyChannelText('location')" title="Copy location">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Meeting Note -->
+            <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 18px; font-size: 0.85rem; color: var(--text-muted); line-height: 1.6;">
+              💡 <strong>Prefer an executive discovery discussion?</strong> Kindly include your proposed calendar link or preferred IST / UTC meeting window in the inquiry message.
+            </div>
+          </div>
+
+          <!-- Right: Interactive Hiring Form -->
+          <div class="hiring-form-card">
+            <h3 class="form-title">Submit a Formal Inquiry</h3>
+            <p class="form-subtitle">Direct institutional communication for engineering roles, technical advisory, or research engagements.</p>
+
+            <form class="hiring-form" id="hireForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="hireName">Full Name *</label>
+                  <input type="text" id="hireName" class="form-input" placeholder="e.g. Sarah Jenkins" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="hireEmail">Corporate / Institutional Email *</label>
+                  <input type="email" id="hireEmail" class="form-input" placeholder="s.jenkins@organization.com" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="hireCompany">Organization / Institution</label>
+                  <input type="text" id="hireCompany" class="form-input" placeholder="e.g. Google, DeepMind, Stripe, Tech Venture" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="hireRoleType">Inquiry Classification *</label>
+                  <select id="hireRoleType" class="form-select" required>
+                    <option value="Software Engineering Internship / Full-Time">Software Engineering Internship / Full-Time</option>
+                    <option value="AI / ML Systems Engineering">AI / ML Systems Engineering</option>
+                    <option value="Distributed Backend Architecture">Distributed Backend Architecture</option>
+                    <option value="Technical Advisory / Fellowship">Technical Advisory / Fellowship</option>
+                    <option value="Collaborative Research Initiative">Collaborative Research Initiative</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="hireMessage">Opportunity Overview &amp; Engagement Scope *</label>
+                <textarea id="hireMessage" class="form-textarea" placeholder="Detail the role specifications, engineering mission, compensation guidelines, or project expectations..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit-hire">
+                <span>Dispatch Formal Inquiry</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER (Formal & Refined Lookbook Footer)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-meta">
+          © 2026 <strong>Avishi Srivastava</strong>. Editorial Lookbook &amp; Engineering Architecture.
+        </div>
+        <ul class="footer-nav">
+          <li><a href="#who-am-i">About</a></li>
+          <li><a href="#qualifications">Qualifications</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#resume">Dossier</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL BACKDROP CONTAINER
+       ========================================================================== -->
+  <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">✕</button>
+      <div id="modalContent">
+        <!-- Injected dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

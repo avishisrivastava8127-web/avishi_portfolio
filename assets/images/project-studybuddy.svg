@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0D17"/>
+      <stop offset="50%" stop-color="#141829"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="aiGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="600" height="360" rx="16" fill="url(#sbGrad)"/>
+
+  <!-- Browser Chrome Header -->
+  <rect width="600" height="42" rx="16" fill="#141829"/>
+  <rect y="20" width="600" height="22" fill="#141829"/>
+  <circle cx="25" cy="21" r="6" fill="#EF4444"/>
+  <circle cx="45" cy="21" r="6" fill="#F59E0B"/>
+  <circle cx="65" cy="21" r="6" fill="#10B981"/>
+  <rect x="130" y="11" width="340" height="20" rx="10" fill="#0B0D17" opacity="0.8"/>
+  <text x="300" y="25" fill="#94A3B8" font-family="'JetBrains Mono', monospace" font-size="10.5" text-anchor="middle">https://studybuddyai-tdlp.onrender.com</text>
+
+  <!-- Inner Application Showcase -->
+  <g transform="translate(30, 56)">
+    <!-- Top Meta Strip -->
+    <rect width="540" height="46" rx="10" fill="#181D30" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="20" y="28" fill="#FFFFFF" font-family="'Plus Jakarta Sans', system-ui" font-size="14" font-weight="800">StudyBuddy AI 📚🤖</text>
+    <text x="175" y="28" fill="#94A3B8" font-family="'Plus Jakarta Sans', system-ui" font-size="11">Exam Revision · Interactive Quiz · Streaming Tutor</text>
+    
+    <rect x="420" y="11" width="105" height="24" rx="12" fill="url(#aiGlow)"/>
+    <text x="472.5" y="27" fill="#FFFFFF" font-family="'Plus Jakarta Sans', system-ui" font-size="10" font-weight="800" text-anchor="middle">GEMINI FLASH</text>
+
+    <!-- Two-Column Layout -->
+    <!-- Left Column: 1-Minute Revision Sheet & PDF Ingest -->
+    <g transform="translate(0, 56)">
+      <rect width="260" height="215" rx="12" fill="#0E1220" stroke="rgba(124,58,237,0.35)" stroke-width="1"/>
+      <rect x="14" y="14" width="232" height="24" rx="6" fill="rgba(124,58,237,0.18)"/>
+      <text x="24" y="30" fill="#A78BFA" font-family="'Plus Jakarta Sans', system-ui" font-size="11" font-weight="700">⚡ 1-MIN REVISION SHEET</text>
+      <text x="235" y="30" fill="#22D3EE" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="end">PDF EXTRACTED</text>
+
+      <!-- Key Concept 1 -->
+      <rect x="14" y="46" width="232" height="42" rx="7" fill="#141829" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <text x="24" y="62" fill="#F8FAFC" font-family="'Plus Jakarta Sans', system-ui" font-size="11" font-weight="700">Central Thesis &amp; Big Idea</text>
+      <text x="24" y="77" fill="#94A3B8" font-family="'Plus Jakarta Sans', system-ui" font-size="9.5">Synthesized 18-page handout into 5 high-yield bullets</text>
+
+      <!-- Must Remember Term Tags -->
+      <rect x="14" y="96" width="232" height="34" rx="7" fill="#141829"/>
+      <text x="24" y="117" fill="#CBD5E1" font-family="'Plus Jakarta Sans', system-ui" font-size="10" font-weight="600">Must-Know Terms:</text>
+      <rect x="122" y="104" width="54" height="18" rx="4" fill="rgba(34,211,238,0.15)"/>
+      <text x="149" y="116.5" fill="#22D3EE" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Entropy</text>
+      <rect x="182" y="104" width="54" height="18" rx="4" fill="rgba(244,63,94,0.15)"/>
+      <text x="209" y="116.5" fill="#FB7185" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="middle">Backprop</text>
+
+      <!-- Ingestion Pill -->
+      <rect x="14" y="140" width="232" height="62" rx="8" fill="#161B2E" stroke="rgba(34,211,238,0.2)" stroke-width="1"/>
+      <circle cx="34" cy="171" r="12" fill="rgba(34,211,238,0.2)"/>
+      <text x="34" y="176" fill="#22D3EE" font-family="'Plus Jakarta Sans', system-ui" font-size="12" text-anchor="middle">📄</text>
+      <text x="56" y="166" fill="#F8FAFC" font-family="'Plus Jakarta Sans', system-ui" font-size="11" font-weight="700">Multi-Format Ingestion</text>
+      <text x="56" y="182" fill="#94A3B8" font-family="'Plus Jakarta Sans', system-ui" font-size="9">Drop PDFs, raw notes, or .txt/.md files</text>
+    </g>
+
+    <!-- Right Column: Interactive Quiz & Streaming Doubt Tutor -->
+    <g transform="translate(272, 56)">
+      <rect width="268" height="215" rx="12" fill="#0E1220" stroke="rgba(34,211,238,0.35)" stroke-width="1"/>
+      
+      <!-- Quiz Header -->
+      <rect x="14" y="14" width="240" height="24" rx="6" fill="rgba(34,211,238,0.18)"/>
+      <text x="24" y="30" fill="#22D3EE" font-family="'Plus Jakarta Sans', system-ui" font-size="11" font-weight="700">🎯 ADAPTIVE QUIZ &amp; LIVE TUTOR</text>
+      <text x="242" y="30" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="9" text-anchor="end">SCORE 5/5</text>
+
+      <!-- Active Quiz Question -->
+      <rect x="14" y="46" width="240" height="66" rx="7" fill="#141829" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      <text x="24" y="63" fill="#F8FAFC" font-family="'Plus Jakarta Sans', system-ui" font-size="10.5" font-weight="700">Q2: Why use token streaming?</text>
+      
+      <!-- Option A (Correct Selected) -->
+      <rect x="24" y="72" width="220" height="18" rx="4" fill="rgba(16,185,129,0.2)" stroke="#10B981" stroke-width="0.8"/>
+      <text x="32" y="85" fill="#34D399" font-family="'Plus Jakarta Sans', system-ui" font-size="9" font-weight="600">✓ Low TTFT &amp; interactive learner feedback</text>
+      
+      <!-- Option B -->
+      <rect x="24" y="93" width="220" height="15" rx="4" fill="rgba(255,255,255,0.03)"/>
+      <text x="32" y="104" fill="#64748B" font-family="'Plus Jakarta Sans', system-ui" font-size="8.5">✗ Batch processing only</text>
+
+      <!-- Streaming Tutor Chat Bubble -->
+      <rect x="14" y="122" width="240" height="80" rx="8" fill="#161B2E" stroke="rgba(124,58,237,0.25)" stroke-width="1"/>
+      <circle cx="30" cy="142" r="9" fill="url(#aiGlow)"/>
+      <text x="30" y="146" fill="#FFFFFF" font-family="'Plus Jakarta Sans', system-ui" font-size="9" font-weight="800" text-anchor="middle">AI</text>
+      <text x="46" y="143" fill="#A78BFA" font-family="'Plus Jakarta Sans', system-ui" font-size="10" font-weight="700">Streaming Doubt Tutor</text>
+      
+      <rect x="24" y="156" width="220" height="36" rx="6" fill="#10131F"/>
+      <text x="32" y="170" fill="#E2E8F0" font-family="'Plus Jakarta Sans', system-ui" font-size="9">"Grounded in your notes: gradient descent optimizes..."</text>
+      <text x="32" y="184" fill="#22D3EE" font-family="'JetBrains Mono', monospace" font-size="8.5">● Real-time token streaming active</text>
+    </g>
+  </g>
+</svg>

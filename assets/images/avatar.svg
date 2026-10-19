@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+    <linearGradient id="avatarGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fed7aa"/>
+      <stop offset="100%" stop-color="#fba86b"/>
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="400" height="400" rx="30" fill="url(#bgGrad)"/>
+
+  <!-- Tech Grid Lines -->
+  <circle cx="200" cy="200" r="160" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6,6" opacity="0.3"/>
+  <circle cx="200" cy="200" r="130" stroke="#818cf8" stroke-width="1.5" opacity="0.2"/>
+
+  <!-- Halo Aura -->
+  <circle cx="200" cy="180" r="105" fill="url(#avatarGlow)" opacity="0.25" filter="url(#glowFilter)"/>
+
+  <!-- Profile Silhouette / Avatar Illustration -->
+  <g id="portrait">
+    <!-- Outer Ring -->
+    <circle cx="200" cy="175" r="92" stroke="url(#avatarGlow)" stroke-width="3" fill="none"/>
+    
+    <!-- Body / Suit -->
+    <path d="M 120 350 C 120 280, 160 260, 200 260 C 240 260, 280 280, 280 350 Z" fill="url(#suitGrad)"/>
+    <!-- Collar & Tie/Accent -->
+    <path d="M 175 260 L 200 310 L 225 260 Z" fill="#38bdf8" opacity="0.8"/>
+    <path d="M 192 260 L 200 325 L 208 260 Z" fill="#c084fc"/>
+
+    <!-- Neck -->
+    <rect x="185" y="225" width="30" height="40" rx="6" fill="url(#skinGrad)"/>
+
+    <!-- Head & Face -->
+    <ellipse cx="200" cy="180" rx="55" ry="65" fill="url(#skinGrad)"/>
+
+    <!-- Modern Hair Style -->
+    <path d="M 140 180 C 138 120, 175 110, 200 110 C 235 110, 262 125, 260 180 C 255 140, 235 130, 200 130 C 165 130, 145 150, 140 180 Z" fill="#18181b"/>
+    <path d="M 145 170 C 145 130, 175 120, 215 120 C 245 120, 258 135, 258 165 C 248 145, 230 138, 205 140 C 180 142, 160 152, 145 170 Z" fill="#27272a"/>
+
+    <!-- Eyes -->
+    <ellipse cx="180" cy="175" rx="5" ry="6" fill="#1e293b"/>
+    <ellipse cx="220" cy="175" rx="5" ry="6" fill="#1e293b"/>
+    <circle cx="182" cy="173" r="1.5" fill="#ffffff"/>
+    <circle cx="222" cy="173" r="1.5" fill="#ffffff"/>
+
+    <!-- Eyebrows -->
+    <path d="M 170 163 Q 180 159 190 164" stroke="#27272a" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <path d="M 210 164 Q 220 159 230 163" stroke="#27272a" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Friendly Smile -->
+    <path d="M 188 205 Q 200 216 212 205" stroke="#9a3412" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Modern Floating Tech Badges around portrait -->
+  <g transform="translate(60, 90)">
+    <rect width="65" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="32.5" y="18" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">&lt;DEV/&gt;</text>
+  </g>
+
+  <g transform="translate(280, 100)">
+    <rect width="65" height="28" rx="14" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="32.5" y="18" fill="#c084fc" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">AI &amp; WEB</text>
+  </g>
+
+  <g transform="translate(260, 275)">
+    <rect width="85" height="28" rx="14" fill="#064e3b" stroke="#34d399" stroke-width="1.5"/>
+    <circle cx="14" cy="14" r="4" fill="#34d399"/>
+    <text x="48" y="18" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">AVAILABLE</text>
+  </g>
+</svg>

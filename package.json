@@ -1,0 +1,23 @@
+{
+  "name": "avishi-srivastava-portfolio",
+  "version": "1.0.0",
+  "description": "High-performance interactive portfolio website for Avishi Srivastava",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node -c js/data.js js/app.js server.js api/index.js"
+  },
+  "keywords": [
+    "portfolio",
+    "software-engineer",
+    "resume",
+    "achievements",
+    "projects"
+  ],
+  "author": "Avishi Srivastava",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0"
+  }
+}

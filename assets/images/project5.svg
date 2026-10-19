@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p5Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="360" rx="16" fill="url(#p5Grad)"/>
+  <rect width="600" height="42" rx="16" fill="#065f46"/>
+  <rect y="20" width="600" height="22" fill="#065f46"/>
+  <circle cx="25" cy="21" r="6" fill="#ef4444"/>
+  <circle cx="45" cy="21" r="6" fill="#f59e0b"/>
+  <circle cx="65" cy="21" r="6" fill="#10b981"/>
+  <text x="300" y="25" fill="#a7f3d0" font-family="monospace" font-size="11" text-anchor="middle">https://quantpulse.finance/analytics</text>
+
+  <g transform="translate(40, 65)">
+    <!-- Main Card -->
+    <rect width="520" height="110" rx="12" fill="#042f2e" stroke="#059669" stroke-width="1.5"/>
+    <text x="30" y="35" fill="#6ee7b7" font-family="system-ui" font-size="13">Portfolio Net Worth</text>
+    <text x="30" y="75" fill="#ffffff" font-family="system-ui" font-size="32" font-weight="900">$184,920.45</text>
+    <rect x="250" y="52" width="75" height="26" rx="13" fill="#065f46"/>
+    <text x="287" y="69" fill="#34d399" font-family="system-ui" font-size="12" font-weight="bold" text-anchor="middle">+24.8% YTD</text>
+
+    <!-- Mini chart bars -->
+    <rect x="0" y="130" width="160" height="130" rx="10" fill="#042f2e" stroke="#059669" stroke-width="1"/>
+    <text x="15" y="155" fill="#99f6e4" font-family="system-ui" font-size="12">Risk Sharpe Ratio</text>
+    <text x="15" y="185" fill="#ffffff" font-family="system-ui" font-size="22" font-weight="bold">2.84</text>
+    <text x="15" y="210" fill="#34d399" font-family="system-ui" font-size="11">Tier 1 Alpha Class</text>
+
+    <rect x="180" y="130" width="160" height="130" rx="10" fill="#042f2e" stroke="#059669" stroke-width="1"/>
+    <text x="195" y="155" fill="#99f6e4" font-family="system-ui" font-size="12">Algorithmic Signals</text>
+    <text x="195" y="185" fill="#38bdf8" font-family="system-ui" font-size="22" font-weight="bold">94.2%</text>
+    <text x="195" y="210" fill="#34d399" font-family="system-ui" font-size="11">Backtested Win Rate</text>
+
+    <rect x="360" y="130" width="160" height="130" rx="10" fill="#042f2e" stroke="#059669" stroke-width="1"/>
+    <text x="375" y="155" fill="#99f6e4" font-family="system-ui" font-size="12">Total Assets Tracked</text>
+    <text x="375" y="185" fill="#fbbf24" font-family="system-ui" font-size="22" font-weight="bold">38 Pairs</text>
+    <text x="375" y="210" fill="#34d399" font-family="system-ui" font-size="11">Real-time WebSocket</text>
+  </g>
+</svg>

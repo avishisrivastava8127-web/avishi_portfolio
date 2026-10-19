@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bioGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22"/>
+      <stop offset="60%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="emeraldBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Card -->
+  <rect width="600" height="360" rx="16" fill="url(#bioGrad)"/>
+
+  <!-- Browser Header -->
+  <rect width="600" height="42" rx="16" fill="#064e3b"/>
+  <rect y="20" width="600" height="22" fill="#064e3b"/>
+  <circle cx="25" cy="21" r="6" fill="#ef4444"/>
+  <circle cx="45" cy="21" r="6" fill="#f59e0b"/>
+  <circle cx="65" cy="21" r="6" fill="#10b981"/>
+  <rect x="140" y="11" width="320" height="20" rx="10" fill="#022c22" opacity="0.7"/>
+  <text x="300" y="25" fill="#a7f3d0" font-family="monospace" font-size="11" text-anchor="middle">https://fantasticfive-hg-26.vercel.app</text>
+
+  <!-- Inner Dashboard -->
+  <g transform="translate(35, 65)">
+    <!-- Top Bar with Badges -->
+    <rect width="530" height="52" rx="10" fill="#064e3b" stroke="#059669" stroke-width="1.2"/>
+    <circle cx="28" cy="26" r="10" fill="#10b981" opacity="0.25"/>
+    <text x="28" y="30" fill="#34d399" font-family="system-ui" font-size="12" font-weight="900" text-anchor="middle">🌱</text>
+    <text x="48" y="24" fill="#ffffff" font-family="system-ui" font-size="14" font-weight="800">KhetiNex BioChain · Mandi Arbitrage</text>
+    <text x="48" y="40" fill="#a7f3d0" font-family="system-ui" font-size="11">Autonomous APMC Price Feeds &amp; Smart Contracts</text>
+
+    <rect x="420" y="12" width="95" height="28" rx="14" fill="url(#goldAccent)"/>
+    <text x="467" y="30" fill="#0f172a" font-family="system-ui" font-size="11" font-weight="800" text-anchor="middle">LIVE VERIFIED</text>
+
+    <!-- Left Box: Arbitrage Corridors -->
+    <rect x="0" y="68" width="310" height="200" rx="12" fill="#022c22" stroke="#065f46" stroke-width="1"/>
+    <text x="20" y="95" fill="#6ee7b7" font-family="system-ui" font-size="12" font-weight="700">CROSS-MANDI PRICE CORRIDOR</text>
+    
+    <!-- Corridor Item 1 -->
+    <rect x="15" y="110" width="280" height="38" rx="8" fill="#064e3b"/>
+    <text x="28" y="133" fill="#ffffff" font-family="system-ui" font-size="12" font-weight="600">Nashik ➔ Mumbai Vashi APMC</text>
+    <text x="280" y="133" fill="#34d399" font-family="system-ui" font-size="12" font-weight="800" text-anchor="end">+₹480/MT</text>
+
+    <!-- Corridor Item 2 -->
+    <rect x="15" y="156" width="280" height="38" rx="8" fill="#064e3b"/>
+    <text x="28" y="179" fill="#ffffff" font-family="system-ui" font-size="12" font-weight="600">Indore Soy ➔ Delhi Azadpur</text>
+    <text x="280" y="179" fill="#fbbf24" font-family="system-ui" font-size="12" font-weight="800" text-anchor="end">+₹620/MT</text>
+
+    <!-- Corridor Item 3 -->
+    <rect x="15" y="202" width="280" height="38" rx="8" fill="#064e3b"/>
+    <text x="28" y="225" fill="#ffffff" font-family="system-ui" font-size="12" font-weight="600">Pune Gultekdi ➔ Bangalore</text>
+    <text x="280" y="225" fill="#34d399" font-family="system-ui" font-size="12" font-weight="800" text-anchor="end">+₹350/MT</text>
+
+    <!-- Right Box: Smart Contract Escrow -->
+    <rect x="330" y="68" width="200" height="200" rx="12" fill="#022c22" stroke="#d97706" stroke-width="1"/>
+    <text x="345" y="95" fill="#fbbf24" font-family="system-ui" font-size="12" font-weight="700">SMART CONTRACT</text>
+    
+    <rect x="345" y="110" width="170" height="55" rx="8" fill="#064e3b"/>
+    <text x="355" y="130" fill="#94a3b8" font-family="system-ui" font-size="10">Escrow Contract #4892</text>
+    <text x="355" y="152" fill="#34d399" font-family="system-ui" font-size="15" font-weight="800">₹ 2,45,000</text>
+
+    <rect x="345" y="175" width="170" height="40" rx="8" fill="#042f2e" stroke="#10b981" stroke-width="0.8"/>
+    <text x="355" y="193" fill="#a7f3d0" font-family="monospace" font-size="9">✓ FSSAI QC Passed</text>
+    <text x="355" y="206" fill="#a7f3d0" font-family="monospace" font-size="9">✓ Transit Cap: 3% Max</text>
+
+    <rect x="345" y="225" width="170" height="32" rx="6" fill="url(#emeraldBar)"/>
+    <text x="430" y="246" fill="#022c22" font-family="system-ui" font-size="11" font-weight="800" text-anchor="middle">Signed &amp; Dispatched ➔</text>
+  </g>
+</svg>

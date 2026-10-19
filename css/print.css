@@ -1,0 +1,173 @@
+/* ==========================================================================
+   PHOTO RESUME PRINT & PDF EXPORT STYLESHEET
+   Triggered by window.print() or @media print
+   ========================================================================== */
+
+@media print {
+  /* Hide non-resume interface components */
+  .site-header,
+  .hero-section,
+  .start-hub-section,
+  .achievements-section,
+  .projects-section,
+  .contact-section,
+  .site-footer,
+  .ambient-bg,
+  .ambient-grid,
+  .resume-action-bar,
+  .modal-backdrop,
+  .toast-container {
+    display: none !important;
+  }
+
+  /* Reset body and containers for paper */
+  html, body {
+    background: #ffffff !important;
+    color: #111827 !important;
+    font-size: 11pt !important;
+    line-height: 1.45 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .resume-section {
+    padding: 0 !important;
+    border: none !important;
+    display: block !important;
+  }
+
+  .resume-dossier {
+    background: #ffffff !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .resume-document-card {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    background: transparent !important;
+  }
+
+  .resume-document-img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .resume-doc-footer,
+  .resume-hover-overlay {
+    display: none !important;
+  }
+
+  .resume-portrait {
+    width: 100pt !important;
+    height: 100pt !important;
+    border: 1pt solid #cbd5e1 !important;
+    box-shadow: none !important;
+    margin-right: 20pt;
+  }
+
+  .resume-header-meta h2 {
+    font-size: 20pt !important;
+    color: #0f172a !important;
+    margin-bottom: 3pt !important;
+  }
+
+  .resume-header-role {
+    font-size: 12pt !important;
+    color: #2563eb !important;
+    font-weight: 700 !important;
+    margin-bottom: 4pt !important;
+  }
+
+  .resume-header-contact {
+    font-size: 9.5pt !important;
+    color: #475569 !important;
+  }
+
+  .resume-body-grid {
+    display: grid !important;
+    grid-template-columns: 1.7fr 1.1fr !important;
+    gap: 20pt !important;
+  }
+
+  .resume-col-title {
+    font-size: 12pt !important;
+    font-weight: 800 !important;
+    color: #0f172a !important;
+    border-bottom: 1.5pt solid #cbd5e1 !important;
+    padding-bottom: 4pt !important;
+    margin-bottom: 10pt !important;
+    text-transform: uppercase;
+  }
+
+  .timeline-list::before {
+    background: #cbd5e1 !important;
+  }
+
+  .timeline-dot {
+    background: #2563eb !important;
+    box-shadow: none !important;
+  }
+
+  .timeline-role {
+    font-size: 10.5pt !important;
+    color: #0f172a !important;
+  }
+
+  .timeline-company {
+    font-size: 9.5pt !important;
+    color: #2563eb !important;
+  }
+
+  .timeline-date {
+    font-size: 8.5pt !important;
+    color: #64748b !important;
+  }
+
+  .timeline-bullets li {
+    font-size: 9pt !important;
+    color: #334155 !important;
+    line-height: 1.4 !important;
+  }
+
+  .timeline-bullets li::before {
+    color: #2563eb !important;
+  }
+
+  .resume-edu-card {
+    background: #f8fafc !important;
+    border: 1pt solid #e2e8f0 !important;
+    padding: 8pt !important;
+    margin-bottom: 10pt !important;
+    page-break-inside: avoid;
+  }
+
+  .skill-pill {
+    background: #f1f5f9 !important;
+    border: 1pt solid #cbd5e1 !important;
+    color: #0f172a !important;
+    font-size: 8.5pt !important;
+    padding: 2pt 6pt !important;
+  }
+
+  .cert-list-sidebar li {
+    font-size: 8.5pt !important;
+    color: #334155 !important;
+  }
+
+  @page {
+    margin: 1.5cm;
+    size: letter portrait;
+  }
+}
