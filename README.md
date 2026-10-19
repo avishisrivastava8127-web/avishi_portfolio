@@ -162,12 +162,16 @@ The included `server.js` provides RESTful endpoints:
 
 ---
 
-## 🌐 Deployment
+## 🌐 Deployment & Live Site
 
-The repository is built with standard web technologies and is ready for 1-click deployment:
-
-- **Render / Railway / Heroku**: Deploys the Node.js/Express application seamlessly using `npm start`.
-- **Vercel / Netlify / GitHub Pages**: Static frontend files (`index.html`, `css/`, `js/`, `assets/`) deploy out-of-the-box with automatic client-side fallback for form submissions.
+- **Live GitHub Pages URL**: [https://avishisrivastava8127-web.github.io/avishi_portfolio/](https://avishisrivastava8127-web.github.io/avishi_portfolio/)
+- **GitHub Pages Configuration**:
+  - The repository includes `.nojekyll` to bypass Jekyll build processing.
+  - Includes `404.html` SPA routing redirect.
+  - Automatically builds and deploys via `.github/workflows/deploy.yml` with dual-mode support (GitHub Actions and `gh-pages` branch).
+- **Vercel / Netlify / Render**:
+  - **Vercel**: Configuration included in `vercel.json` with serverless API handlers in `api/index.js`.
+  - **Render / Railway**: Runs `npm start` (`node server.js`) with persistent JSON storage for recruitment inquiries.
 
 ---
 
