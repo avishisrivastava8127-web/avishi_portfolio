@@ -981,7 +981,7 @@ button, input, textarea, select {
 
 .bento-grid-2col {
   display: grid;
-  grid-template-columns: 1.12fr 0.88fr;
+  grid-template-columns: 1.23fr 0.77fr;
   gap: clamp(20px, 2.5vw, 32px);
   align-items: stretch;
 }
@@ -1021,7 +1021,7 @@ button, input, textarea, select {
    -------------------------------------------------------------------------- */
 .bento-who-split {
   display: grid;
-  grid-template-columns: 1.25fr 0.75fr;
+  grid-template-columns: 1fr 1.05fr;
   gap: 24px;
   align-items: center;
 }
@@ -1100,7 +1100,7 @@ button, input, textarea, select {
   background: #111013;
   border: 1px solid var(--border-bento);
   border-radius: var(--radius-md);
-  padding: 18px 20px 28px;
+  padding: 16px 18px 26px;
   position: relative;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -1125,9 +1125,12 @@ button, input, textarea, select {
 .code-pre {
   margin: 0;
   font-family: var(--font-mono);
-  font-size: 0.84rem;
-  line-height: 1.6;
+  font-size: 0.80rem;
+  line-height: 1.55;
   color: #E6E2D8;
+  letter-spacing: -0.01em;
+  white-space: pre;
+  overflow-x: auto;
 }
 
 .ckw { color: #F43F5E; }
@@ -1138,14 +1141,14 @@ button, input, textarea, select {
 
 .code-terminal-footer {
   position: absolute;
-  bottom: -12px;
+  bottom: -11px;
   right: 14px;
 }
 
 .code-status-pill {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.05em;
+  font-size: 0.71rem;
+  letter-spacing: 0.04em;
   color: var(--accent-emerald);
   background: #111013;
   border: 1px solid rgba(16, 185, 129, 0.35);
@@ -1155,6 +1158,7 @@ button, input, textarea, select {
   align-items: center;
   gap: 6px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
 }
 
 /* --------------------------------------------------------------------------
@@ -1162,8 +1166,8 @@ button, input, textarea, select {
    -------------------------------------------------------------------------- */
 .qual-content-split {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 20px;
+  grid-template-columns: 0.88fr 1.12fr;
+  gap: 16px;
   align-items: stretch;
   margin-bottom: 24px;
 }
@@ -1172,7 +1176,7 @@ button, input, textarea, select {
   background: linear-gradient(145deg, rgba(250, 248, 245, 0.06), rgba(250, 248, 245, 0.02));
   border: 1.5px solid rgba(212, 163, 115, 0.35);
   border-radius: var(--radius-md);
-  padding: 24px 20px;
+  padding: 20px 14px;
   position: relative;
   cursor: pointer;
   transition: var(--transition);
@@ -1191,13 +1195,13 @@ button, input, textarea, select {
 
 .cert-ribbon-tag {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 10px;
+  right: 10px;
   background: #E11D48;
   color: #FFFFFF;
-  font-size: 0.68rem;
+  font-size: 0.65rem;
   font-weight: 800;
-  padding: 3px 9px;
+  padding: 2px 8px;
   border-radius: 4px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -1205,41 +1209,43 @@ button, input, textarea, select {
 }
 
 .cert-card-icon {
-  font-size: 2.2rem;
-  margin-bottom: 8px;
+  font-size: 2rem;
+  margin-bottom: 6px;
 }
 
 .cert-card-title {
   font-family: var(--font-display);
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #FAF8F5;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 
 .cert-card-sub {
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   color: var(--accent-sand);
   margin-bottom: 2px;
   font-weight: 600;
 }
 
 .cert-card-org {
-  font-size: 0.8rem;
+  font-size: 0.76rem;
   color: var(--text-muted);
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .btn-cert-inspect {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid var(--border-bento);
   color: #FAF8F5;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-weight: 600;
-  padding: 7px 16px;
+  padding: 6px 14px;
   border-radius: var(--radius-full);
   cursor: pointer;
   transition: var(--transition);
+  text-decoration: none;
+  display: inline-block;
 }
 
 .btn-cert-inspect:hover {
@@ -1258,15 +1264,14 @@ button, input, textarea, select {
   background: #FAF8F5;
   color: #171618;
   font-weight: 700;
-  font-size: 0.82rem;
-  padding: 9px 16px;
+  font-size: 0.80rem;
+  padding: 9px 14px;
   border-radius: var(--radius-full);
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.28);
   transition: var(--transition);
   text-align: center;
   cursor: default;
   letter-spacing: 0.01em;
-  white-space: nowrap;
 }
 
 [data-theme="light"] .editorial-white-pill {
@@ -1278,6 +1283,88 @@ button, input, textarea, select {
   background: #FFFFFF;
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.editorial-white-pill.qual-btn-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding: 8px 14px;
+}
+
+.editorial-white-pill.qual-btn-link span:first-child {
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.editorial-white-pill.qual-btn-link .pill-arrow-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 800;
+  background: rgba(0, 0, 0, 0.08);
+  color: #171618;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+  flex-shrink: 0;
+}
+
+[data-theme="light"] .editorial-white-pill.qual-btn-link .pill-arrow-icon {
+  background: rgba(255, 255, 255, 0.15);
+  color: #FAF8F5;
+}
+
+.editorial-white-pill.qual-btn-link:hover {
+  background: #FFFFFF;
+  border-color: var(--accent-caramel);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 16px rgba(212, 163, 115, 0.3);
+  transform: translateY(-2px);
+}
+
+[data-theme="light"] .editorial-white-pill.qual-btn-link:hover {
+  background: #000000;
+  border-color: var(--accent-caramel);
+}
+
+.editorial-white-pill.qual-btn-link:hover .pill-arrow-icon {
+  background: #171618;
+  color: #FAF8F5;
+  transform: translate(2px, -2px);
+}
+
+[data-theme="light"] .editorial-white-pill.qual-btn-link:hover .pill-arrow-icon {
+  background: #FAF8F5;
+  color: #171618;
+}
+
+[data-theme="light"] .cert-preview-card {
+  background: #FFFFFF;
+  border-color: rgba(212, 163, 115, 0.45);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .cert-card-title {
+  color: #171618;
+}
+
+[data-theme="light"] .btn-cert-inspect {
+  background: #171618;
+  color: #FAF8F5;
+  border-color: #171618;
+}
+
+[data-theme="light"] .btn-cert-inspect:hover {
+  background: var(--accent-caramel);
+  color: #FFFFFF;
 }
 
 .qual-tools-footer {

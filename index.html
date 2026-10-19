@@ -232,24 +232,35 @@
             
             <div class="qual-content-split">
               <!-- Left: Certificate Preview Card with Diploma Badge & Red Ribbon -->
-              <div class="cert-preview-card" onclick="openCredentialModal('ach-gravitas-genai')" title="Click to view &amp; verify certificate">
+              <div class="cert-preview-card" onclick="window.open('assets/documents/certificate-gravitas-2026.pdf', '_blank')" title="Click to view &amp; verify official certificate">
                 <div class="cert-ribbon-tag">VERIFIED</div>
                 <div class="cert-card-icon">🎓</div>
                 <div class="cert-card-title">graVITas 2026</div>
                 <div class="cert-card-sub">Full Stack &amp; Generative AI</div>
                 <div class="cert-card-org">VIT Vellore • HCLTech</div>
-                <button class="btn-cert-inspect" onclick="event.stopPropagation(); openCredentialModal('ach-gravitas-genai');">
+                <a href="assets/documents/certificate-gravitas-2026.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert-inspect" onclick="event.stopPropagation()">
                   Inspect Certificate ↗
-                </button>
+                </a>
               </div>
 
-              <!-- Right: Capsule Pill Badges (Matching reference's white pills!) -->
+              <!-- Right: Interactive Redirect Capsule Buttons -->
               <div class="qual-capsules-list">
-                <div class="editorial-white-pill">HackGrid 2nd Runner-Up (53 Teams)</div>
-                <div class="editorial-white-pill">graVITas '26 GenAI Masterclass</div>
-                <div class="editorial-white-pill">ISC Class XII CS — 100/100</div>
-                <div class="editorial-white-pill">CBSE Class X — 95.8% Overall</div>
-                <div class="editorial-white-pill">Inter-Collegiate Debate Honors</div>
+                <a href="https://fantasticfive-hg-26.vercel.app/" target="_blank" rel="noopener noreferrer" class="editorial-white-pill qual-btn-link" title="Launch HackGrid 2nd Runner-Up Live App">
+                  <span>HackGrid 2nd Runner-Up (53 Teams)</span>
+                  <span class="pill-arrow-icon">↗</span>
+                </a>
+                <a href="assets/documents/certificate-gravitas-2026.pdf" target="_blank" rel="noopener noreferrer" class="editorial-white-pill qual-btn-link" title="View Official graVITas 2026 GenAI Certificate (PDF)">
+                  <span>graVITas '26 GenAI Masterclass</span>
+                  <span class="pill-arrow-icon">↗</span>
+                </a>
+                <a href="#resume" class="editorial-white-pill qual-btn-link" title="View Class X &amp; XII Official Academic Records">
+                  <span>Class X &amp; XII Distinctions (100/100 CS • 95.8%)</span>
+                  <span class="pill-arrow-icon">↓</span>
+                </a>
+                <a href="#resume" class="editorial-white-pill qual-btn-link" title="View Debate Competitions Record">
+                  <span>Inter-Collegiate Debate Honors</span>
+                  <span class="pill-arrow-icon">↓</span>
+                </a>
               </div>
             </div>
 
