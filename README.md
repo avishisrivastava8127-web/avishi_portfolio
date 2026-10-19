@@ -52,27 +52,21 @@ The portfolio follows an architectural **Bento Grid** layout with fine hairline 
   5. 🎙️ **`Inter-Collegiate Debate Honors`**
 - Bottom technology pill bar highlighting active proficiencies.
 
-### 4. 💻 My Work Includes (`#projects`)
-- Filterable project grid with instant category buttons (`All`, `AI / EdTech`, `Web3 / Agri`) and real-time live search.
-- **Featured Systems**:
+### 4. 💻 Featured Work — Projects Side by Side (`#projects`)
+- Two production-grade systems presented side by side in an expansive Bento showcase:
   - **StudyBuddy AI**: End-to-end intelligent study system with automated PDF notes ingestion, 1-minute revision synthesis, and streaming doubt tutor. Live at [studybuddyai-tdlp.onrender.com](https://studybuddyai-tdlp.onrender.com/).
   - **KhetiNex BioChain**: HackGrid Hackathon second runner-up platform for agricultural price arbitrage and smart contracts. Live at [fantasticfive-hg-26.vercel.app](https://fantasticfive-hg-26.vercel.app/).
-  - **Cloud AI Tunnel Service**: Production tunnel integration live at [devtunnels.ms](https://45pxqhx1-5173.inc1.devtunnels.ms/).
+- Filterable project controls with category buttons (`All`, `AI / EdTech`, `Web3 / Agri`) and real-time live search.
 - Deep-dive interactive modal dialogs detailing problem statement, architectural solution, and tech stack.
 
-### 5. 🔬 Case Study Deep-Dive (`#case-study`)
-- Dedicated architectural breakdown of **StudyBuddy AI**.
-- Contextual narrative covering Challenge, Engineered Architecture, and Impact Metrics.
-- Framed desktop browser window mockup with direct buttons to inspect the live platform and source code.
-
-### 6. 📱 Technical Arsenal (`#arsenal`)
+### 5. 📱 Technical Arsenal (`#arsenal`)
 - 4 vertical smartphone-aspect hardware cards featuring speaker notches, category indices, and hover lighting:
   - `01 / AI & LLM Systems` — PyTorch, Gemini API, RAG, Prompt Engineering, NLP.
   - `02 / Full-Stack Core` — Node.js, Express 5, React 19, RESTful APIs, WebSockets.
   - `03 / Algorithmic Core` — Data Structures & Algorithms in Java, Python, and C++ (100/100 in CS).
   - `04 / Cloud & DevOps` — Vercel, Render, Git/GitHub, Docker, Linux.
 
-### 7. 📄 Executive Dossier & Verified Resume (`#resume`)
+### 6. 📄 Executive Dossier & Verified Resume (`#resume`)
 - High-resolution institutional credential sheet with fullscreen zoom inspection modal and direct JPG download.
 - Structured interactive dossier:
   - **Distinctions & Hackathon Honors** (prioritized before academic background).
@@ -80,7 +74,7 @@ The portfolio follows an architectural **Bento Grid** layout with fine hairline 
   - **Categorized Technical Competencies** (Languages, Interests, Competencies, Problem Solving).
 - **1-Click ATS Print / Save as PDF**: Formatted print stylesheet providing a clean, one-page printable CV via `window.print()`.
 
-### 8. ✉️ Formal Inquiries & Contact (`#contact`)
+### 7. ✉️ Formal Inquiries & Contact (`#contact`)
 - Recruiter and hiring manager dispatch interface with role scope selection (`Full-Time`, `Internship`, `Research Collaboration`, `Technical Advisory`, `Freelance MVP`).
 - Full-stack REST API integration (`POST /api/contact`) with JSON file persistence, rate-limiting safeguards, and fallback storage.
 - Direct communication channels (Email, Phone, Location) with 1-click clipboard copy.

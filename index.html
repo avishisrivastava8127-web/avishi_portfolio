@@ -106,11 +106,11 @@
                   <span>Explore My Work</span>
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                 </a>
-                <a href="#case-study" class="btn-secondary">
-                  <span>Case Study</span>
-                </a>
                 <a href="#resume" class="btn-secondary">
                   <span>Executive Dossier</span>
+                </a>
+                <a href="#contact" class="btn-secondary">
+                  <span>Contact Me</span>
                 </a>
               </div>
             </div>
@@ -273,113 +273,36 @@
     </section>
 
     <!-- ==========================================================================
-         BENTO ROW 2: MY WORK INCLUDES & CASE STUDY
+         BENTO ROW 2: FEATURED ENGINEERING PROJECTS (Side by Side)
          ========================================================================== -->
-    <section class="bento-row-section" id="work-case-study">
+    <section class="bento-full-section" id="projects">
       <div class="container">
-        <div class="bento-grid-2col">
-          <!-- Left: MY WORK INCLUDES -->
-          <div class="bento-card bento-work-card" id="projects">
-            <div class="bento-card-header bento-work-header">
-              <h2 class="bento-title">MY WORK INCLUDES</h2>
-              
-              <!-- Filter Pills & Search -->
-              <div class="work-filter-controls">
-                <div class="filter-pills-mini">
-                  <button class="filter-btn active" data-category="all">All</button>
-                  <button class="filter-btn" data-category="ai">AI / EdTech</button>
-                  <button class="filter-btn" data-category="agritech">Web3 / Agri</button>
-                </div>
+        <div class="bento-card bento-work-card">
+          <div class="bento-card-header bento-work-header">
+            <div>
+              <h2 class="bento-title">MY WORK</h2>
+              <p class="projects-sub-description">
+                Featured engineering systems integrating generative AI, algorithmic optimization, and modern full-stack architectures.
+              </p>
+            </div>
+            
+            <!-- Filter Pills & Search -->
+            <div class="work-filter-controls">
+              <div class="filter-pills-mini">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="ai">AI / EdTech</button>
+                <button class="filter-btn" data-category="agritech">Web3 / Agri</button>
               </div>
-            </div>
-
-            <div class="work-search-compact">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-              <input type="text" id="projectSearchInput" class="search-input-bento" placeholder="Filter systems (e.g. Gemini, React, Web3)..." aria-label="Search projects" />
-            </div>
-
-            <!-- Dynamic Projects Grid (Populated by app.js) -->
-            <div class="projects-bento-grid" id="projectsGrid">
-              <!-- Populated by app.js -->
+              <div class="work-search-compact">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" id="projectSearchInput" class="search-input-bento" placeholder="Filter projects (e.g. Gemini, React)..." aria-label="Search projects" />
+              </div>
             </div>
           </div>
 
-          <!-- Right: CASE STUDY -->
-          <div class="bento-card bento-case-card" id="case-study">
-            <div class="bento-card-header bento-case-header">
-              <div>
-                <h2 class="bento-title">CASE STUDY</h2>
-                <div class="case-study-badge">High-Yield AI Platform</div>
-              </div>
-              <p class="case-study-hero-statement">
-                Engineered StudyBuddy AI: An end-to-end intelligent study system with automated PDF notes ingestion, 1-minute revision synthesis, and streaming doubt tutor.
-              </p>
-            </div>
-
-            <div class="case-study-inner-grid">
-              <!-- Left: Narrative Breakdown -->
-              <div class="case-narrative-col">
-                <div class="narrative-section">
-                  <h4 class="narrative-title">The Challenge</h4>
-                  <p class="narrative-copy">
-                    Students struggle to synthesize massive volumes of unstructured lecture notes before exams, lacking immediate interactive clarification on intricate concepts.
-                  </p>
-                </div>
-
-                <div class="narrative-section">
-                  <h4 class="narrative-title">Engineered Solution</h4>
-                  <p class="narrative-copy">
-                    Integrated Node.js &amp; Express 5 with Google Gemini Flash Lite via strict JSON schema enforcement. Built Server-Sent Events (SSE) streaming for conversational doubt clarification grounded directly in course notes.
-                  </p>
-                </div>
-
-                <div class="narrative-section">
-                  <h4 class="narrative-title">Key Performance Metrics</h4>
-                  <div class="case-metrics-strip">
-                    <div class="case-stat">
-                      <span class="c-stat-val">&lt;100ms</span>
-                      <span class="c-stat-lbl">Token Latency</span>
-                    </div>
-                    <div class="case-stat">
-                      <span class="c-stat-val">100%</span>
-                      <span class="c-stat-lbl">Schema Rigor</span>
-                    </div>
-                    <div class="case-stat">
-                      <span class="c-stat-val">1-Min</span>
-                      <span class="c-stat-lbl">Revision Sheet</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Right: Device Mockup Frames & CTAs -->
-              <div class="case-visual-col">
-                <div class="mockup-browser-window">
-                  <div class="browser-header-bar">
-                    <div class="window-dots">
-                      <span class="dot red"></span>
-                      <span class="dot yellow"></span>
-                      <span class="dot green"></span>
-                    </div>
-                    <div class="window-url-pill">studybuddyai-tdlp.onrender.com</div>
-                  </div>
-                  <div class="browser-canvas-body">
-                    <img src="assets/images/project-studybuddy.svg" alt="StudyBuddy AI Platform" class="case-screenshot-img" />
-                  </div>
-                </div>
-
-                <div class="case-action-group">
-                  <a href="https://studybuddyai-tdlp.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-case-primary" title="Launch StudyBuddy AI Live App">
-                    <span>Launch Live Platform</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                  </a>
-                  <a href="https://github.com/avishisrivastava8127-web/studybuddyy" target="_blank" rel="noopener noreferrer" class="btn-case-gh" title="Inspect GitHub Repository">
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-                    <span>GitHub Code</span>
-                  </a>
-                </div>
-              </div>
-            </div>
+          <!-- Dynamic Projects Grid (Both projects side by side!) -->
+          <div class="projects-bento-grid" id="projectsGrid">
+            <!-- Populated by app.js -->
           </div>
         </div>
       </div>
