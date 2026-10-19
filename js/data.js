@@ -9,7 +9,7 @@ const portfolioData = {
     role: "B.Tech in Computer Science and Engineering (AI & ML) • VIT Vellore",
     institution: "Vellore Institute of Technology, Vellore",
     statusBadge: "Open to Software Engineering & AI Internships",
-    tagline: "Authentic engineering & intelligent systems that connect algorithmic precision with scalable real-world architectures.",
+    tagline: "Building intelligent solutions with AI, creative problem-solving, and a passion for turning ideas into real-world impact.",
     avatar: "assets/images/avatar.svg",
     resumeImage: "assets/images/resume.jpg",
     location: "VIT Vellore, Tamil Nadu, India",
